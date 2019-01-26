@@ -1,0 +1,52 @@
+{
+  "Holidays": [
+    {
+      "Price": {
+        "Value": 1052,
+        "Currency": "£"
+      },
+      "Availability": true,
+      "Title": "Mitsis Galini Wellness Spa Resort",
+      "ProductId": 86884,
+      "Description": "Close to Athens (150 km to the North), the hotel Galini Wellness Spa & Resort nestles in a valley of eucalyptus trees, an ideal starting point for extensive walking and hiking tours, for trips to the nearby ski centre of Parnassos mountain or for excursions to the Meteora, Delphi, Thermopiles and many other points of interest. This 5-star resort offers views of a charming courtyard, and offers 224 contemporary rooms. It provides family-friendly amenities, with room designs and services for families of all sizes, plus a playground and a kids pool. It also offers a sun deck with impressive sea and pool views. Every room at Mitsis Galini Wellness Spa & Resort comes with a kitchenette and a mini bar, and the bathrooms offer slippers and bathrobes. Each provides a variety of entertainment amenities, including a CD player and a DVD player.",
+      "SeoPath": "mitsis-galini-wellness-spa-resort",
+      "ProductLink": {
+        "Href": "/mitsis-galini-wellness-spa-resort"
+      },
+      "ProductImage": {
+        "Link": {
+          "Href": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/53033/53033_861012_lg.jpg"
+        },
+        "MimeType": "image/jpeg"
+      },
+      "Reviews": {
+        "AverageStarReviewRating": 4.8517,
+        "ReviewCount": 29
+      }
+    },
+    {
+      "Price": {
+        "Value": 966,
+        "Currency": "£"
+      },
+      "Availability": false,
+      "Title": "Divani Meteora Hotel",
+      "ProductId": 86885,
+      "Description": "Sitting at the base of the Meteora rocks, the Divani Meteora boasts a spacious outdoor pool and spacious rooms with oak-wood furnishings, most with view to Meteora rocks. Decorated by awarded designer Andre Warwick, the Divani Meteora Hotel rooms feature wooden floors and spacious verandas. All rooms are equipped with the latest in modern amenities including, electronic key locks, air conditioning, Pay/satellite TV and minibar. Guests can take a dive at the Divani Meteora hotel’s pool or relax at the hotel's spa, offering an indoor pool, sauna, steam room, hot tub and exercise room. In a relaxed and open atmosphere with spectacular view of the Meteora rocks, guests can enjoy breakfast, lunch or dinner. The hotel chef proposes a variety of local and International dishes, accompanied with a variety of wines.",
+      "SeoPath": "divani-meteora-hotel",
+      "ProductLink": {
+        "Href": "/divani-meteora-hotel"
+      },
+      "ProductImage": {
+        "Link": {
+          "Href": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49720/49720_625533_lg.jpg"
+        },
+        "MimeType": "image/jpeg"
+      },
+      "Reviews": {
+        "AverageStarReviewRating": 4.5513,
+        "ReviewCount": 18
+      }
+    }
+  ]
+}

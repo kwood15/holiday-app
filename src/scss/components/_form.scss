@@ -1,0 +1,48 @@
+.control {
+  position: relative;
+  padding-left: 2rem;
+  padding-right: 0.5rem;
+  cursor: pointer;
+}
+
+.control__input {
+  position: absolute;
+  opacity: 0;
+}
+
+.control__indicator {
+  $size: 1.25rem;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: $size;
+  width: $size;
+  background: #e6e6e6;
+  &:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+}
+
+.control__input:checked {
+  & ~ .control__indicator {
+    background-color: $primary;
+    &:after {
+      display: block;
+    }
+  }
+}
+
+.control--radio .control__indicator {
+  border-radius: 50%;
+  &:after {
+    $size: 0.45rem;
+    left: $size;
+    top: $size;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: $white;
+  }
+}

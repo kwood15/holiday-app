@@ -1,0 +1,69 @@
+{
+  "name": "holiday-app",
+  "author": "Kay Wood",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "http://kwood15.github.io/holiday-app",
+  "scripts": {
+    "start": "react-scripts start & wait-on http://localhost:3000",
+    "lint": "eslint . src/ . --ext .js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --coverage --verbose",
+    "test:ci": "react-scripts test --coverage --verbose && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "test-e2e": "cypress open",
+    "test-e2e:ci": "npm start & cypress run --record env-cmd .env --key=REACT_APP_CYPRESS_RECORD_KEY",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.8",
+    "@fortawesome/free-solid-svg-icons": "^5.5.0",
+    "@fortawesome/react-fontawesome": "^0.1.3",
+    "@rebass/grid": "^6.0.0-5",
+    "env-cmd": "^8.0.2",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "gh-pages": "^2.0.1",
+    "history": "^4.7.2",
+    "jest-fetch-mock": "^2.1.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-image-gallery": "^0.8.12",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.3",
+    "react-stars": "^2.2.5",
+    "react-test-renderer": "^16.6.3",
+    "styled-components": "^4.1.2"
+  },
+  "devDependencies": {
+    "coveralls": "^3.0.2",
+    "cypress": "^3.1.4",
+    "enzyme-to-json": "^3.3.5",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "jest-styled-components": "^6.3.1",
+    "node-sass": "^4.10.0",
+    "wait-on": "^3.2.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js",
+      "!src/serviceWorker.js",
+      "!src/setupTests.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
