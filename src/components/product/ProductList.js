@@ -24,7 +24,7 @@ class ProductList extends Component {
       .then(response => response.json())
       .then(data => this.saveData(data))
       .catch(error => this.setState({ error }));
-  };
+  }
 
   filterHolidays = () => {
     const { holidays } = this.state;
@@ -36,7 +36,7 @@ class ProductList extends Component {
     this.setState({
       filteredHolidays
     });
-  };
+  }
 
   saveData(holidays) {
     this.setState({
@@ -49,7 +49,7 @@ class ProductList extends Component {
     const { filteredHolidays, error } = this.state;
     return (
       <section className="product-results">
-        <ProductTitle>Holidays</ProductTitle>
+        <ProductTitle>Holiday Resorts in Greece</ProductTitle>
         {error ? (
           <div className="error-message">
             <p>Sorry there has been a problem with your request</p>

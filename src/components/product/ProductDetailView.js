@@ -27,13 +27,13 @@ class ProductDetailView extends Component {
       .then(response => response.json())
       .then(data => this.saveData(data))
       .catch(error => this.setState({ error }));
-  };
+  }
 
   handleRadioChange = (e) => {
     this.setState({
       selectedSpecification: e.target.value
     });
-  };
+  }
 
   handleSubmit = (e) => {
     const { selectedSpecification } = this.state;
@@ -43,9 +43,9 @@ class ProductDetailView extends Component {
     } else {
       alert('You must select a specification');
     }
-  };
+  }
 
-  formatMarkup = stringToFormat => ({ __html: stringToFormat });
+  formatMarkup = stringToFormat => ({ __html: stringToFormat })
 
   saveData(holiday) {
     this.setState({

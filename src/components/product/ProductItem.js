@@ -16,16 +16,22 @@ class ProductItem extends Component {
 
   showModal = (e) => {
     e.preventDefault();
-    this.setState({
-      openModal: true
-    }, () => this.closeButtonNode.focus());
+    this.setState(
+      {
+        openModal: true
+      },
+      () => this.closeButtonNode.focus()
+    );
     this.htmlElement.classList.add('u-lock-scroll');
   }
 
   hideModal = () => {
-    this.setState({
-      openModal: false
-    }, () => this.openButtonNode.focus());
+    this.setState(
+      {
+        openModal: false
+      },
+      () => this.openButtonNode.focus()
+    );
     this.htmlElement.classList.remove('u-lock-scroll');
   }
 
@@ -40,39 +46,75 @@ class ProductItem extends Component {
     return (
       <Fragment>
         <ProductWrapper className="product" itemScope itemType="http://schema.org/Product">
-          <a href="/" className="product__link" onClick={this.showModal} title="View product details">
-            <h1 className="product__title u-text-center">{holiday.Title}</h1>
-            <ProductImage className="product__image" itemProp="image" src={holiday.ProductImage.Link.Href} alt={holiday.SeoPath} />
+          <a
+            href="/"
+            className="product__link"
+            onClick={this.showModal}
+            title="View product details"
+          >
+            <h1 className="product__title">{holiday.Title}</h1>
+            <ProductImage
+              className="product__image"
+              itemProp="image"
+              src={holiday.ProductImage.Link.Href}
+              alt={holiday.SeoPath}
+            />
             {holiday.Reviews.ReviewCount ? (
-              <Flex alignItems="center" className="product__rating" itemProp="aggregateRating" itemScope itemType="http://schema.org/AggregateRating">
-                <ReactStars count={holiday.Reviews.AverageStarRating} size={24} color1="#ffd700" half />
+              <Flex
+                alignItems="center"
+                className="product__rating"
+                itemProp="aggregateRating"
+                itemScope
+                itemType="http://schema.org/AggregateRating"
+              >
+                <ReactStars
+                  count={holiday.Reviews.AverageStarRating}
+                  size={24}
+                  color1="#ffbe4f"
+                  edit={false}
+                  half
+                />
                 <span className="product__rating-value" itemProp="ratingValue">
                   {holiday.Reviews.AverageStarRating}
                 </span>
                 <span className="product__rating-count" itemProp="ratingCount">
-                (
+                  (
                   {holiday.Reviews.ReviewCount}
-                )
+)
                 </span>
-              </Flex>) : null}
-            <div className="product__pricing" itemProp="offers" itemScope itemType="http://schema.org/Offer">
-              <span className="product__pricing-currency" itemProp="priceCurrency" content={holiday.Price.Currency}>
+              </Flex>
+            ) : null}
+            <div
+              className="product__pricing"
+              itemProp="offers"
+              itemScope
+              itemType="http://schema.org/Offer"
+            >
+              <span
+                className="product__pricing-currency"
+                itemProp="priceCurrency"
+                content={holiday.Price.Currency}
+              >
                 {holiday.Price.Currency}
               </span>
-              <span className="product__pricing-value" itemProp="price" content={holiday.Price.Value}>
+              <span
+                className="product__pricing-value"
+                itemProp="price"
+                content={holiday.Price.Value}
+              >
                 {holiday.Price.Value}
                 {' '}
-                per person
+per person
               </span>
             </div>
-            <Button ref={node => this.openButtonNode = node}>View details</Button>
+            <Button ref={node => (this.openButtonNode = node)}>View details</Button>
           </a>
         </ProductWrapper>
         <Modal
           openModal={openModal}
           handleClose={this.hideModal}
-          modalRef={node => this.modalNode = node}
-          buttonRef={node => this.closeButtonNode = node}
+          modalRef={node => (this.modalNode = node)}
+          buttonRef={node => (this.closeButtonNode = node)}
           handleOutsideClick={this.handleOutsideClick}
         >
           <ProductDetailModal holiday={holiday} />

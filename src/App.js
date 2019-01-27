@@ -23,7 +23,7 @@ library.add(faSearch);
 
 export const theme = {
   textColor: '#505050',
-  bodyColor: '#fafafa',
+  bodyColor: '#f9f9f9',
   primaryColor: '#0ea7b5',
   secondaryColor: '#ffbe4f',
   tertiaryColor: '#0c457d',
@@ -38,29 +38,41 @@ export const theme = {
   breakpoints: ['32em', '48em', '64em']
 };
 
-const App = () => (
-  <ThemeProvider theme={theme}>
-    <Fragment>
-      <GlobalStyles />
-      <UtilitiesStyles />
-      <SearchContext.Provider>
-        <Header>
-          <Flex as="form" className="form form--search">
-            <Input className="form__input" type="search" placeholder="Search holidays..." />
-            <Button type="submit" className="form__btn">
-              <FontAwesomeIcon icon="search" />
-              <span>Search</span>
-            </Button>
-          </Flex>
-        </Header>
-        <Container>
-          <Breadcrumbs />
-          <Main />
-        </Container>
-      </SearchContext.Provider>
-      <Footer />
-    </Fragment>
-  </ThemeProvider>
-);
+const App = () => {
+  const [searchTerm, setSearchTerm] = useState('');
+
+  const handleChange = e => setSearchTerm(e.target.value);
+
+  return (
+    <ThemeProvider theme={theme}>
+      <Fragment>
+        <GlobalStyles />
+        <UtilitiesStyles />
+        <SearchContext.Provider value={searchTerm}>
+          <Header>
+            <Flex as="form" className="form form--search">
+              <Input
+                className="form__input"
+                type="search"
+                placeholder="Search holidays..."
+                onChange={handleChange}
+                value={searchTerm}
+              />
+              <Button type="submit" className="form__btn">
+                <FontAwesomeIcon icon="search" />
+                <span>Search</span>
+              </Button>
+            </Flex>
+          </Header>
+          <Container>
+            <Breadcrumbs />
+            <Main />
+          </Container>
+        </SearchContext.Provider>
+        <Footer />
+      </Fragment>
+    </ThemeProvider>
+  );
+};
 
 export default App;

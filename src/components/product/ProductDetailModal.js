@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 import { Flex, Box } from '@rebass/grid';
 import ReactStars from 'react-stars';
 import {
-  Button,
-  QuantityButton,
-  QuantityInput,
-  BaseLink
+  Button, QuantityButton, QuantityInput, BaseLink
 } from '../shared/SharedStyles';
 import { ProductWrapper, ProductImage } from './ProductStyles';
 
@@ -15,15 +12,15 @@ class ProductDetailModal extends Component {
     quantity: 1
   };
 
-  increaseQuantity = e => {
+  increaseQuantity = (e) => {
     const { quantity } = this.state;
     e.preventDefault();
     this.setState({
       quantity: quantity + 1
     });
-  };
+  }
 
-  decreaseQuantity = e => {
+  decreaseQuantity = (e) => {
     const { quantity } = this.state;
     e.preventDefault();
     if (quantity > 1) {
@@ -31,19 +28,19 @@ class ProductDetailModal extends Component {
         quantity: quantity - 1
       });
     }
-  };
+  }
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({
       quantity: e.target.value
     });
-  };
+  }
 
-  handleKeyDown = e => {
+  handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       this.postForm();
     }
-  };
+  }
 
   postForm = () => {
     const { quantity } = this.state;
@@ -54,7 +51,7 @@ class ProductDetailModal extends Component {
     } else {
       alert('You must order a minimum of 1 and maximum of 10');
     }
-  };
+  }
 
   render() {
     const { quantity } = this.state;
@@ -64,11 +61,7 @@ class ProductDetailModal extends Component {
     return (
       <ProductWrapper className="product product--modal">
         <Flex alignItems="flex-start">
-          <Box
-            width={[1, 1 / 2]}
-            itemScope
-            itemType="http://schema.org/Product"
-          >
+          <Box width={[1, 1 / 2]} itemScope itemType="http://schema.org/Product">
             <ProductImage
               itemProp="image"
               src={holiday.ProductImage.Link.Href}
@@ -93,7 +86,8 @@ class ProductDetailModal extends Component {
                 <ReactStars
                   count={holiday.Reviews.AverageStarRating}
                   size={24}
-                  color1="#ffd700"
+                  color1="#ffbe4f"
+                  edit={false}
                   half
                 />
                 <span className="product__rating-value" itemProp="ratingValue">
@@ -102,7 +96,7 @@ class ProductDetailModal extends Component {
                 <span className="product__rating-count" itemProp="ratingCount">
                   (
                   {holiday.Reviews.ReviewCount}
-                  )
+)
                 </span>
               </Flex>
             ) : null}
@@ -130,24 +124,16 @@ class ProductDetailModal extends Component {
               >
                 {holiday.Price.Value}
                 {' '}
-                per person
+per person
               </span>
             </div>
 
-            <Box
-              as="form"
-              className="product-quantity"
-              onSubmit={this.postForm}
-              pt={3}
-            >
+            <Box as="form" className="product-quantity" onSubmit={this.postForm} pt={3}>
               <fieldset className="product__quantity-fields">
                 <label htmlFor="quantityDecrease" className="u-visually-hidden">
                   Decrease quantity
                 </label>
-                <QuantityButton
-                  id="quantityDecrease"
-                  onClick={this.decreaseQuantity}
-                >
+                <QuantityButton id="quantityDecrease" onClick={this.decreaseQuantity}>
                   <span className="product-quantity__text">–</span>
                 </QuantityButton>
                 <label htmlFor="quantityAmount" className="u-visually-hidden">
