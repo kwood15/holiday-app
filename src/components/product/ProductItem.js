@@ -61,6 +61,8 @@ class ProductItem extends Component {
               </span>
               <span className="product__pricing-value" itemProp="price" content={holiday.Price.Value}>
                 {holiday.Price.Value}
+                {' '}
+                per person
               </span>
             </div>
             <Button ref={node => this.openButtonNode = node}>View details</Button>

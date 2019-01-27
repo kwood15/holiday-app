@@ -1,14 +1,14 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import { Flex, Box } from "@rebass/grid";
-import ReactStars from "react-stars";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { Flex, Box } from '@rebass/grid';
+import ReactStars from 'react-stars';
 import {
   Button,
   QuantityButton,
   QuantityInput,
   BaseLink
-} from "../shared/SharedStyles";
-import { ProductWrapper, ProductImage } from "./ProductStyles";
+} from '../shared/SharedStyles';
+import { ProductWrapper, ProductImage } from './ProductStyles';
 
 class ProductDetailModal extends Component {
   state = {
@@ -40,7 +40,7 @@ class ProductDetailModal extends Component {
   };
 
   handleKeyDown = e => {
-    if (e.key === "Enter") {
+    if (e.key === 'Enter') {
       this.postForm();
     }
   };
@@ -52,7 +52,7 @@ class ProductDetailModal extends Component {
     if (quantity >= minQuantity && quantity <= maxQuantity) {
       alert(`Submitted with quantity: ${quantity}`);
     } else {
-      alert("You must order a minimum of 1 and maximum of 10");
+      alert('You must order a minimum of 1 and maximum of 10');
     }
   };
 
@@ -129,6 +129,8 @@ class ProductDetailModal extends Component {
                 content={holiday.Price.Value}
               >
                 {holiday.Price.Value}
+                {' '}
+                per person
               </span>
             </div>
 

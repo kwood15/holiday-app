@@ -29,7 +29,7 @@
         "Value": 966,
         "Currency": "£"
       },
-      "Availability": false,
+      "Availability": true,
       "Title": "Divani Meteora Hotel",
       "ProductId": 86885,
       "Description": "Sitting at the base of the Meteora rocks, the Divani Meteora boasts a spacious outdoor pool and spacious rooms with oak-wood furnishings, most with view to Meteora rocks. Decorated by awarded designer Andre Warwick, the Divani Meteora Hotel rooms feature wooden floors and spacious verandas. All rooms are equipped with the latest in modern amenities including, electronic key locks, air conditioning, Pay/satellite TV and minibar. Guests can take a dive at the Divani Meteora hotel’s pool or relax at the hotel's spa, offering an indoor pool, sauna, steam room, hot tub and exercise room. In a relaxed and open atmosphere with spectacular view of the Meteora rocks, guests can enjoy breakfast, lunch or dinner. The hotel chef proposes a variety of local and International dishes, accompanied with a variety of wines.",
@@ -46,6 +46,150 @@
       "Reviews": {
         "AverageStarReviewRating": 4.5513,
         "ReviewCount": 18
+      }
+    },
+    {
+      "Price": {
+        "Value": 1206,
+        "Currency": "£"
+      },
+      "Availability": true,
+      "Title": "Pilio Holiday Club",
+      "ProductId": 86886,
+      "Description": "Surrounded by the rich greenery of Mount Pilio, this traditionally-built, 4-star hotel is located 1.5 km from Mylopotamos Beach, offering mountain and Aegean Sea views. The hotel features a pool and a traditional restaurant. All air-conditioned rooms are furnished to reflect the local tradition and have balconies. A TV and a mini bar are standard. Some room types offer four-poster beds and views of Mylopotamos Beach. The lounge room features a satellite TV and a fireplace. Younger guests have fun at the playground in the garden. Free WiFi access is provided in the reception and pool area. Staff can offer information on nearby attractions such as the traditional village of Tsagarada and the ski resort in Hania. The scenic Ntamouchari Beach is 8 km away.",
+      "SeoPath": "pilio-holiday-club",
+      "ProductLink": {
+        "Href": "/pilio-holiday-club"
+      },
+      "ProductImage": {
+        "Link": {
+          "Href": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49002/Pilio%20holidays%20(32)_5697_Gallery_lg.jpg"
+        },
+        "MimeType": "image/jpeg"
+      },
+      "Reviews": {
+        "AverageStarReviewRating": 3.5713,
+        "ReviewCount": 9
+      }
+    },
+    {
+      "Price": {
+        "Value": 1226,
+        "Currency": "£"
+      },
+      "Availability": true,
+      "Title": "Cavo Olympo Luxury Resort & Spa",
+      "ProductId": 86887,
+      "Description": "Cavo Olympo Luxury Resort & Spa features an indoor and an outdoor pool and its own private beach in Plaka Litochorou of Pieria. Including a gym and a spa centre, this luxurious hotel offers a bar and a restaurant and a variety of entertainment options. The air-conditioned rooms and suites of Cavo Olympo open out to a private balcony overlooking Thermaikos Gulf or Mount Olympus. Each is modernly decorated and features a seating area with a flat-screen TV and minibar. Continental breakfast is served at the on-site restaurant, where guests can also enjoy Greek and Mediterranean dishes. Refreshing drinks, coffees and cocktails are served at the hotel’s bar.The resort has an extensive wine cellar stocked with regional wines. Leisure facilities include a games room, massage treatments and a small library. Staff at the 24-hour front desk can arrange babysitting and can provide car rental services. Room service is available. Cavo Olympo Luxury Resort is located 2 km from Litochoro Village and 20 km from the town of Katerini. Palios Panteleimon Village is at 18 km. Free private parking is possible on site.",
+      "SeoPath": "cavo-olympo-luxury-resort-and-spa",
+      "ProductLink": {
+        "Href": "/cavo-olympo-luxury-resort-and-spa"
+      },
+      "ProductImage": {
+        "Link": {
+          "Href": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49459/49459_597531_lg.jpg"
+        },
+        "MimeType": "image/jpeg"
+      },
+      "Reviews": {
+        "AverageStarReviewRating": 4.5,
+        "ReviewCount": 19
+      }
+    },
+    {
+      "Price": {
+        "Value": 508,
+        "Currency": "£"
+      },
+      "Availability": true,
+      "Title": "Ouzas Hotel",
+      "ProductId": 86888,
+      "Description": "Ouzas Hotel is located in Olympiaki­ Akti, offering a barbecue and views of the garden­. This apartment hotel is ideal for families and groups as well as couples and business travellers. The area is popular for skiing and diving. Elatochori is 29 km from Ouzas Hotel, while Paralia Katerinis is 3.1 km from the property. Thessaloniki Airport is 46 km away. The hotel has a ski pass sales point and ski storage space, and guests can enjoy a drink at the bar. Free private parking is available on site. There is a 24-hour front desk at the property. Guests may take advantage of the Apartment hotel 's Laundry service and the hotel is wheelchair-accessible. Large pets are allowed at this establishment. A terrace or balcony are featured in certain rooms. All rooms include a private bathroom. The hotel features free Wi-Fi throughout the property.",
+      "SeoPath": "ouzas-hotel",
+      "ProductLink": {
+        "Href": "/ouzas-hotel"
+      },
+      "ProductImage": {
+        "Link": {
+          "Href": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/52168/52168_623767_lg.jpg"
+        },
+        "MimeType": "image/jpeg"
+      },
+      "Reviews": {
+        "AverageStarReviewRating": 5,
+        "ReviewCount": 27
+      }
+    },
+    {
+      "Price": {
+        "Value": 658,
+        "Currency": "£"
+      },
+      "Availability": true,
+      "Title": "Aroma Dryos Design Hotel",
+      "ProductId": 86889,
+      "Description": "Just 3 minutes from the centre of Metsovo, this hotel offers wonderful views of the mountains of Pindus and combines tradition with luxury and modern conveniences. In the winter, it is an excellent base for ski lovers due to its convenient proximity to the Politses and Karakoli ski centres. Local points of interest also include a number of churches and monasteries and a wine factory, which offers wine tours. Built in the spirit of traditional architecture, from stone and wood carved by hand, the hotel exudes warmth and hospitality from the entrance and lobby throughout the premises. Each room is furnished with one type of wood and named after it, and comes with a fireplace and balcony, which add to the unforgettable fairy-tale atmospere.",
+      "SeoPath": "aroma-dryos-design-hotel",
+      "ProductLink": {
+        "Href": "/aroma-dryos-design-hotel"
+      },
+      "ProductImage": {
+        "Link": {
+          "Href": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/51704/51704_913218_lg.jpg"
+        },
+        "MimeType": "image/jpeg"
+      },
+      "Reviews": {
+        "AverageStarReviewRating": 5,
+        "ReviewCount": 33
+      }
+    },
+    {
+      "Price": {
+        "Value": 509,
+        "Currency": "£"
+      },
+      "Availability": true,
+      "Title": "Alexiou Hotel",
+      "ProductId": 86890,
+      "Description": "This hotel is conveniently located on the main street of the mountain village Kalambaka in northern Greece. The property, which boasts eighteen comfortable rooms with panoramic views of the Meteora rocks, is an ideal base for winter sport enthusiasts and nature lovers alike. Guests can start their day with a homemade breakfast and later stroll into the village to explore the shops or savour scrumptious traditional cuisine in the local tavernas. The breath-taking rocks provide the perfect backdrop to the property, which is located just 4 km from the historic Meteora Monasteries, a group of six monasteries perched upon natural sandstone rock pillars. Guests can also enjoy daytrips to nearby attractions in the region, including the ski resort of Pertouli, the mountain village of Elati and Plastira Lake. The friendly staff will be delighted to arrange for excursions or car rental.",
+      "SeoPath": "alexiou-hotel",
+      "ProductLink": {
+        "Href": "/alexiou-hotel"
+      },
+      "ProductImage": {
+        "Link": {
+          "Href": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/51635/222442a_hb_l_004_lg.jpg"
+        },
+        "MimeType": "image/jpeg"
+      },
+      "Reviews": {
+        "AverageStarReviewRating": 3,
+        "ReviewCount": 22
+      }
+    },
+    {
+      "Price": {
+        "Value": 718,
+        "Currency": "£"
+      },
+      "Availability": true,
+      "Title": "Philoxenia Hotel",
+      "ProductId": 86891,
+      "Description": "The self-contained units all have a fully equipped kitchenette, as well as a dining area and a spacious furnished balcony, where guests can enjoy their home-cooked meals on a backdrop of sweeping mountain or sea views. As an alternative to the beautiful beach, the hotel has a large swimming pool, which can meet the requirements of any age group, including children. The outdoor area comprises also a pool bar, where guests can enjoy a refreshing drink or a light meal. The restaurant overlooks the swimming pool area and serves complimentary breakfast in the morning and a rich variety of authentic Greek cuisine for lunch and dinner.",
+      "SeoPath": "philoxenia-hotel",
+      "ProductLink": {
+        "Href": "/philoxenia-hotel"
+      },
+      "ProductImage": {
+        "Link": {
+          "Href": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49446/49446_937179_lg.jpg"
+        },
+        "MimeType": "image/jpeg"
+      },
+      "Reviews": {
+        "AverageStarReviewRating": 4.5,
+        "ReviewCount": 7
       }
     }
   ]
