@@ -40,7 +40,6 @@ export const GlobalStyles = createGlobalStyle`
   a {
     color: ${props => props.theme.primaryColor};
     text-decoration: none;
-    text-transform: lowercase;
   }
 
   p {

@@ -50,11 +50,10 @@ export const BaseLink = styled(Link)`
 
 export const NavigationLink = styled(NavLink)`
   color: ${props => props.theme.textColor};
-  text-transform: capitalize;
   &:hover,
   &:focus {
     color: ${props => props.theme.primaryColor};
-    border-bottom: 2px solid ${props => props.theme.primaryColor};
+    border-bottom: 2px solid ${props => props.theme.secondaryColor};
   }
 `;
 
@@ -71,11 +70,7 @@ export const Button = styled.button`
   border: 2px solid ${props => props.theme.primaryColor};
   background-color: ${props => props.theme.white};
   padding: 0.6rem 1rem;
-  letter-spacing: 1px;
-  font-family: 'Arial', sans-serif;
   font-size: 1rem;
-  font-weight: 700;
-  text-transform: lowercase;
   cursor: pointer;
 
   &:hover,

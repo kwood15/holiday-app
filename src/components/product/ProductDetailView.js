@@ -54,8 +54,6 @@ class ProductDetailView extends Component {
   }
 
   render() {
-    console.log(this.state, 'abc');
-
     const { holiday, selectedSpecification, error } = this.state;
 
     const holidayImages = holiday.ImageUrls.map(image => ({
@@ -87,7 +85,7 @@ class ProductDetailView extends Component {
               </Flex>
               <Flex flexDirection="column" width={[1, 1 / 2]} className="product-description">
                 <h1 className="product-description__title">{holiday.Title}</h1>
-                <p className="product-description__number">xxx</p>
+                <p className="product-description__product-number">xxx</p>
                 {/* eslint-disable-next-line react/no-danger */}
                 <p
                   className="product-description__text"

@@ -1,12 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Flex, Box } from '@rebass/grid';
 import {
-  HeaderWrapper,
-  Logo,
-  BaseLink,
-  NavigationItem,
-  NavigationLink
+  HeaderWrapper, Logo, NavigationItem, NavigationLink
 } from './SharedStyles';
 
 import logo from '../../img/logo.svg';
@@ -15,10 +12,10 @@ export const Header = ({ children }) => (
   <HeaderWrapper className="header">
     <Flex flexDirection="column" alignItems="center">
       <Box className="logo">
-        <BaseLink to="/" className="logo__link">
+        <Link to="/" className="logo__link">
           <span className="logo__text u-visually-hidden">logo</span>
           <Logo src={logo} alt="Company logo" />
-        </BaseLink>
+        </Link>
       </Box>
 
       <Box py={3} className="search">
@@ -27,20 +24,12 @@ export const Header = ({ children }) => (
 
       <Flex as="nav" className="navigation">
         <NavigationItem className="navigation__item">
-          <NavigationLink
-            to="/"
-            activeClassName="active"
-            className="navigation__link"
-          >
+          <NavigationLink to="/" activeClassName="active" className="navigation__link">
             Home
           </NavigationLink>
         </NavigationItem>
         <NavigationItem className="navigation__item">
-          <NavigationLink
-            to="/holidays"
-            activeClassName="active"
-            className="navigation__link"
-          >
+          <NavigationLink to="/holidays" activeClassName="active" className="navigation__link">
             Holidays
           </NavigationLink>
         </NavigationItem>

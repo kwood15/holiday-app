@@ -41,7 +41,7 @@ class ProductItem extends Component {
       <Fragment>
         <ProductWrapper className="product" itemScope itemType="http://schema.org/Product">
           <a href="/" className="product__link" onClick={this.showModal} title="View product details">
-            <h1 className="product__title u-visually-hidden">{holiday.Title}</h1>
+            <h1 className="product__title u-text-center">{holiday.Title}</h1>
             <ProductImage className="product__image" itemProp="image" src={holiday.ProductImage.Link.Href} alt={holiday.SeoPath} />
             {holiday.Reviews.ReviewCount ? (
               <Flex alignItems="center" className="product__rating" itemProp="aggregateRating" itemScope itemType="http://schema.org/AggregateRating">

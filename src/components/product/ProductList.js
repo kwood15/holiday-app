@@ -62,10 +62,7 @@ class ProductList extends Component {
                 // eslint-disable-next-line react/no-array-index-key
                 key={index}
                 width={[1, 1 / 2, 1 / 4]}
-                p={4}
-                flexDirection="column"
-                justifyContent="flex-end"
-                alignItems="center"
+                p={2}
               >
                 <ProductItem holiday={holiday} id={holiday.ProductId} />
               </Flex>

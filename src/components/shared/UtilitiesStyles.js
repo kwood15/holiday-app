@@ -27,6 +27,10 @@ export const UtilitiesStyles = createGlobalStyle`
     margin-top: 0;
   }
 
+  .u-text-center {
+    text-align: center;
+  }
+
   .u-visually-hidden {
     position: absolute;
     overflow: hidden;
