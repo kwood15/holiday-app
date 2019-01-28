@@ -18,7 +18,7 @@ class ProductDetailView extends Component {
   componentDidMount() {
     this.getHoliday()
       .then(res => this.setState({
-        holiday: res.holiday.Holiday
+        holiday: res.holiday
       }))
       .catch(error => this.setState({ error }));
     this.htmlElement.classList.remove('u-lock-scroll');
@@ -67,9 +67,9 @@ class ProductDetailView extends Component {
               <Flex flexDirection="column" width={[1, 1 / 2]} className="product-description">
                 <h1 className="product-description__title">{holiday.Title}</h1>
                 <p className="product-description__product-number">xxx</p>
-                {/* eslint-disable-next-line react/no-danger */}
                 <p
                   className="product-description__text"
+                  // eslint-disable-next-line react/no-danger
                   dangerouslySetInnerHTML={this.formatMarkup(holiday.Description)}
                 />
                 <p className="product-description__stock-status">

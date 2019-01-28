@@ -1,6 +1,6 @@
-import React from "react";
-import { Flex } from "@rebass/grid";
-import { FooterWrapper } from "./SharedStyles";
+import React from 'react';
+import { Flex } from '@rebass/grid';
+import { FooterWrapper } from './SharedStyles';
 
 export const Footer = () => (
   <FooterWrapper className="footer">

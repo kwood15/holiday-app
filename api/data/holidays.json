@@ -19,6 +19,28 @@
         },
         "MimeType": "image/jpeg"
       },
+      "ImageUrls": [
+        {
+          "ImageNo": 1,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/53033/53033_861009.jpg"
+        },
+        {
+          "ImageNo": 2,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/53033/53033_628654.jpg"
+        },
+        {
+          "ImageNo": 3,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/53033/53033_861011.jpg"
+        },
+        {
+          "ImageNo": 4,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/53033/53033_861006.jpg"
+        },
+        {
+          "ImageNo": 5,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/53033/53033_861002.jpg"
+        }
+      ],
       "Reviews": {
         "AverageStarReviewRating": 4.8517,
         "ReviewCount": 29
@@ -26,25 +48,45 @@
     },
     {
       "Price": {
-        "Value": 966,
+        "Value": 711,
         "Currency": "£"
       },
       "Availability": true,
-      "Title": "Divani Meteora Hotel",
+      "Title": "Kalafati Hotel Itea",
       "ProductId": 86885,
-      "Description": "Sitting at the base of the Meteora rocks, the Divani Meteora boasts a spacious outdoor pool and spacious rooms with oak-wood furnishings, most with view to Meteora rocks. Decorated by awarded designer Andre Warwick, the Divani Meteora Hotel rooms feature wooden floors and spacious verandas. All rooms are equipped with the latest in modern amenities including, electronic key locks, air conditioning, Pay/satellite TV and minibar. Guests can take a dive at the Divani Meteora hotel’s pool or relax at the hotel's spa, offering an indoor pool, sauna, steam room, hot tub and exercise room. In a relaxed and open atmosphere with spectacular view of the Meteora rocks, guests can enjoy breakfast, lunch or dinner. The hotel chef proposes a variety of local and International dishes, accompanied with a variety of wines.",
-      "SeoPath": "divani-meteora-hotel",
-      "ProductLink": {
-        "Href": "/divani-meteora-hotel"
-      },
+      "Description": "This elegant hotel boasts a privileged setting in Itea, overlooking the picturesque Krissaios Gulf with mountains in the background. The establishment lies within a short car drive from Delphi, Galaxidi, and Arachova, allowing visitors to easily discover the beauty and rich culture. The property offers air-conditioned and beautifully adorned rooms in which to completely recharge one's batteries after all day of touring into the city. They feature natural tones, comfortable furniture and balcony with beautiful views over the city and sea. Some of the rooms have a jacuzzi for added guests convenience. In the morning, visitors may delight in a rich and tasty breakfast to provide energy to start the day. Afterwards, patrons may enjoy a drink and chat with friends at the charming bar with a lounge. In case of a query guests may turn to friendly hotel staff at 24-hour reception.",
+      "SeoPath": "kalafati-hotel-itea",
+      "ProductLink": { "Href": "/kalafati-hotel-itea" },
       "ProductImage": {
         "Link": {
-          "Href": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49720/49720_625533_lg.jpg"
+          "Href": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/50366/50366_889332_lg.jpg"
         },
         "MimeType": "image/jpeg"
       },
+      "ImageUrls": [
+        {
+          "ImageNo": 1,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/50366/50366_889332.jpg"
+        },
+        {
+          "ImageNo": 2,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/50366/50366_889326.jpg"
+        },
+        {
+          "ImageNo": 3,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/50366/093067a_hb_a_001.jpg"
+        },
+        {
+          "ImageNo": 4,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/50366/50366_889330.jpg"
+        },
+        {
+          "ImageNo": 5,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/50366/093067a_hb_ba_001.jpg"
+        }
+      ],
       "Reviews": {
-        "AverageStarReviewRating": 4.5513,
+        "AverageStarReviewRating": 4.5,
         "ReviewCount": 18
       }
     },
@@ -58,15 +100,35 @@
       "ProductId": 86886,
       "Description": "Surrounded by the rich greenery of Mount Pilio, this traditionally-built, 4-star hotel is located 1.5 km from Mylopotamos Beach, offering mountain and Aegean Sea views. The hotel features a pool and a traditional restaurant. All air-conditioned rooms are furnished to reflect the local tradition and have balconies. A TV and a mini bar are standard. Some room types offer four-poster beds and views of Mylopotamos Beach. The lounge room features a satellite TV and a fireplace. Younger guests have fun at the playground in the garden. Free WiFi access is provided in the reception and pool area. Staff can offer information on nearby attractions such as the traditional village of Tsagarada and the ski resort in Hania. The scenic Ntamouchari Beach is 8 km away.",
       "SeoPath": "pilio-holiday-club",
-      "ProductLink": {
-        "Href": "/pilio-holiday-club"
-      },
+      "ProductLink": { "Href": "/pilio-holiday-club" },
       "ProductImage": {
         "Link": {
           "Href": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49002/Pilio%20holidays%20(32)_5697_Gallery_lg.jpg"
         },
         "MimeType": "image/jpeg"
       },
+      "ImageUrls": [
+        {
+          "ImageNo": 1,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49002/Pilio%20holidays%20(32)_5697_Gallery.jpg"
+        },
+        {
+          "ImageNo": 2,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49002/Pilio%20holidays%20(31)_5697_Gallery.jpg"
+        },
+        {
+          "ImageNo": 3,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49002/Pilio%20holidays%20(17)_5697_Gallery.jpg"
+        },
+        {
+          "ImageNo": 4,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49002/Pilio%20holidays%20(16)_5697_Gallery.jpg"
+        },
+        {
+          "ImageNo": 5,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49002/Pilio%20holidays%20(5)_5697_Gallery.jpg"
+        }
+      ],
       "Reviews": {
         "AverageStarReviewRating": 3.5713,
         "ReviewCount": 9
@@ -82,15 +144,35 @@
       "ProductId": 86887,
       "Description": "Cavo Olympo Luxury Resort & Spa features an indoor and an outdoor pool and its own private beach in Plaka Litochorou of Pieria. Including a gym and a spa centre, this luxurious hotel offers a bar and a restaurant and a variety of entertainment options. The air-conditioned rooms and suites of Cavo Olympo open out to a private balcony overlooking Thermaikos Gulf or Mount Olympus. Each is modernly decorated and features a seating area with a flat-screen TV and minibar. Continental breakfast is served at the on-site restaurant, where guests can also enjoy Greek and Mediterranean dishes. Refreshing drinks, coffees and cocktails are served at the hotel’s bar.The resort has an extensive wine cellar stocked with regional wines. Leisure facilities include a games room, massage treatments and a small library. Staff at the 24-hour front desk can arrange babysitting and can provide car rental services. Room service is available. Cavo Olympo Luxury Resort is located 2 km from Litochoro Village and 20 km from the town of Katerini. Palios Panteleimon Village is at 18 km. Free private parking is possible on site.",
       "SeoPath": "cavo-olympo-luxury-resort-and-spa",
-      "ProductLink": {
-        "Href": "/cavo-olympo-luxury-resort-and-spa"
-      },
+      "ProductLink": { "Href": "/cavo-olympo-luxury-resort-and-spa" },
       "ProductImage": {
         "Link": {
           "Href": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49459/49459_597531_lg.jpg"
         },
         "MimeType": "image/jpeg"
       },
+      "ImageUrls": [
+        {
+          "ImageNo": 1,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49459/49459_597531.jpg"
+        },
+        {
+          "ImageNo": 2,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49459/49459_597540.jpg"
+        },
+        {
+          "ImageNo": 3,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49459/49459_597533.jpg"
+        },
+        {
+          "ImageNo": 4,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49459/49459_597537.jpg"
+        },
+        {
+          "ImageNo": 5,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49459/175514a_hb_ba_008.jpg"
+        }
+      ],
       "Reviews": {
         "AverageStarReviewRating": 4.5,
         "ReviewCount": 19
@@ -115,6 +197,28 @@
         },
         "MimeType": "image/jpeg"
       },
+      "ImageUrls": [
+        {
+          "ImageNo": 1,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/52168/52168_623767.jpg"
+        },
+        {
+          "ImageNo": 2,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/52168/52168_623761.jpg"
+        },
+        {
+          "ImageNo": 3,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/52168/52168_602107.jpg"
+        },
+        {
+          "ImageNo": 4,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/52168/52168_623766.jpg"
+        },
+        {
+          "ImageNo": 5,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/52168/52168_623762.jpg"
+        }
+      ],
       "Reviews": {
         "AverageStarReviewRating": 5,
         "ReviewCount": 27
@@ -130,15 +234,35 @@
       "ProductId": 86889,
       "Description": "Just 3 minutes from the centre of Metsovo, this hotel offers wonderful views of the mountains of Pindus and combines tradition with luxury and modern conveniences. In the winter, it is an excellent base for ski lovers due to its convenient proximity to the Politses and Karakoli ski centres. Local points of interest also include a number of churches and monasteries and a wine factory, which offers wine tours. Built in the spirit of traditional architecture, from stone and wood carved by hand, the hotel exudes warmth and hospitality from the entrance and lobby throughout the premises. Each room is furnished with one type of wood and named after it, and comes with a fireplace and balcony, which add to the unforgettable fairy-tale atmospere.",
       "SeoPath": "aroma-dryos-design-hotel",
-      "ProductLink": {
-        "Href": "/aroma-dryos-design-hotel"
-      },
+      "ProductLink": { "Href": "/aroma-dryos-design-hotel" },
       "ProductImage": {
         "Link": {
           "Href": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/51704/51704_913218_lg.jpg"
         },
         "MimeType": "image/jpeg"
       },
+      "ImageUrls": [
+        {
+          "ImageNo": 1,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/51704/51704_913218.jpg"
+        },
+        {
+          "ImageNo": 2,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/51704/225355a_hb_a_002.jpg"
+        },
+        {
+          "ImageNo": 3,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/51704/225355a_hb_w_003.jpg"
+        },
+        {
+          "ImageNo": 4,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/51704/51704_631872.jpg"
+        },
+        {
+          "ImageNo": 5,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/51704/51704_913226.jpg"
+        }
+      ],
       "Reviews": {
         "AverageStarReviewRating": 5,
         "ReviewCount": 33
@@ -163,6 +287,28 @@
         },
         "MimeType": "image/jpeg"
       },
+      "ImageUrls": [
+        {
+          "ImageNo": 1,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/51635/222442a_hb_l_004.jpg"
+        },
+        {
+          "ImageNo": 2,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/51635/222442a_hb_w_007.jpg"
+        },
+        {
+          "ImageNo": 3,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/51635/222442a_hb_r_005.jpg"
+        },
+        {
+          "ImageNo": 4,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/51635/222442a_hb_l_003.jpg"
+        },
+        {
+          "ImageNo": 5,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/51635/222442a_hb_ba_009.jpg"
+        }
+      ],
       "Reviews": {
         "AverageStarReviewRating": 3,
         "ReviewCount": 22
@@ -187,6 +333,28 @@
         },
         "MimeType": "image/jpeg"
       },
+      "ImageUrls": [
+        {
+          "ImageNo": 1,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49446/49446_937179.jpg"
+        },
+        {
+          "ImageNo": 2,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49446/49446_937183.jpg"
+        },
+        {
+          "ImageNo": 3,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49446/49446_937187.jpg"
+        },
+        {
+          "ImageNo": 4,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49446/49446_937163.jpg"
+        },
+        {
+          "ImageNo": 5,
+          "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49446/49446_937165.jpg"
+        }
+      ],
       "Reviews": {
         "AverageStarReviewRating": 4.5,
         "ReviewCount": 7

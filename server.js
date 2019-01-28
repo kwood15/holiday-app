@@ -1,6 +1,5 @@
 const express = require('express');
 const holidays = require('./api/data/holidays');
-const holiday = require('./api/data/holiday');
 
 const app = express();
 const port = process.env.PORT || 4000;
@@ -10,7 +9,10 @@ app.get('/api/holidays', (req, res) => {
 });
 
 app.get('/api/holiday/:seoPath/:productId', (req, res) => {
-  res.send({ holiday });
+  // eslint-disable-next-line eqeqeq
+  const matchedHolidays = holidays.Holidays.filter(item => item.ProductId == req.params.productId);
+  matchedHolidays.map(holiday => res.send({ holiday }));
 });
 
+// eslint-disable-next-line no-console
 app.listen(port, () => console.log(`Listening on port ${port}`));

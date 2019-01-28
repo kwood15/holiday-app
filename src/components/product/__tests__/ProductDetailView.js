@@ -6,7 +6,10 @@ import ProductDetailView from '../ProductDetailView';
 describe('<ProductDetailView /> component', () => {
   const props = {
     match: {
-      params: {}
+      params: {
+        seoPath: 'mitsis-galini-wellness-spa-resort',
+        productId: '86884'
+      }
     }
   };
 
@@ -15,38 +18,36 @@ describe('<ProductDetailView /> component', () => {
     fetch.mockResponseOnce(
       JSON.stringify({
         holiday: {
-          Holiday: {
-            Price: {
-              Value: 1052,
-              Currency: '£'
+          Price: {
+            Value: 1052,
+            Currency: '£'
+          },
+          Availability: true,
+          Title: 'Mitsis Galini Wellness Spa Resort',
+          ProductId: 86884,
+          Description:
+            'Close to Athens (150 km to the North), the hotel Galini Wellness Spa & Resort nestles in a valley of eucalyptus trees, an ideal starting point for extensive walking and hiking tours, for trips to the nearby ski centre of Parnassos mountain or for excursions to the Meteora, Delphi, Thermopiles and many other points of interest. This 5-star resort offers views of a charming courtyard, and offers 224 contemporary rooms. It provides family-friendly amenities, with room designs and services for families of all sizes, plus a playground and a kids pool. It also offers a sun deck with impressive sea and pool views. Every room at Mitsis Galini Wellness Spa & Resort comes with a kitchenette and a mini bar, and the bathrooms offer slippers and bathrobes. Each provides a variety of entertainment amenities, including a CD player and a DVD player.',
+          SeoPath: 'mitsis-galini-wellness-spa-resort',
+          ProductLink: {
+            Href: '/mitsis-galini-wellness-spa-resort'
+          },
+          ProductImage: {
+            Link: {
+              Href:
+                'https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/53033/53033_861012_lg.jpg'
             },
-            Availability: true,
-            Title: 'Mitsis Galini Wellness Spa Resort',
-            ProductId: 86884,
-            Description:
-              'Close to Athens (150 km to the North), the hotel Galini Wellness Spa & Resort nestles in a valley of eucalyptus trees, an ideal starting point for extensive walking and hiking tours, for trips to the nearby ski centre of Parnassos mountain or for excursions to the Meteora, Delphi, Thermopiles and many other points of interest. This 5-star resort offers views of a charming courtyard, and offers 224 contemporary rooms. It provides family-friendly amenities, with room designs and services for families of all sizes, plus a playground and a kids pool. It also offers a sun deck with impressive sea and pool views. Every room at Mitsis Galini Wellness Spa & Resort comes with a kitchenette and a mini bar, and the bathrooms offer slippers and bathrobes. Each provides a variety of entertainment amenities, including a CD player and a DVD player.',
-            SeoPath: 'mitsis-galini-wellness-spa-resort',
-            ProductLink: {
-              Href: '/mitsis-galini-wellness-spa-resort'
-            },
-            ProductImage: {
-              Link: {
-                Href:
-                  'https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/53033/53033_861012_lg.jpg'
-              },
-              MimeType: 'image/jpeg'
-            },
-            ImageUrls: [
-              {
-                ImageNo: 1,
-                ImageUrl:
-                  'https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/53033/53033_861009.jpg'
-              }
-            ],
-            Reviews: {
-              AverageStarReviewRating: 4.8517,
-              ReviewCount: 29
+            MimeType: 'image/jpeg'
+          },
+          ImageUrls: [
+            {
+              ImageNo: 1,
+              ImageUrl:
+                'https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/53033/53033_861009.jpg'
             }
+          ],
+          Reviews: {
+            AverageStarReviewRating: 4.8517,
+            ReviewCount: 29
           }
         }
       })
