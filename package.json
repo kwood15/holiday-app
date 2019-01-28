@@ -6,6 +6,8 @@
   "homepage": "http://kwood15.github.io/holiday-app",
   "scripts": {
     "start": "react-scripts start & wait-on http://localhost:3000",
+    "server": "node server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start\"",
     "lint": "eslint . src/ . --ext .js",
     "build": "react-scripts build",
     "test": "react-scripts test --coverage --verbose",
@@ -21,6 +23,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.5.0",
     "@fortawesome/react-fontawesome": "^0.1.3",
     "@rebass/grid": "^6.0.0-5",
+    "body-parser": "^1.18.3",
     "env-cmd": "^8.0.2",
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.0",
@@ -39,6 +42,7 @@
     "styled-components": "^4.1.2"
   },
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "coveralls": "^3.0.2",
     "cypress": "^3.1.4",
     "enzyme-to-json": "^3.3.5",
@@ -66,5 +70,6 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "proxy": "http://localhost:4000"
 }

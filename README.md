@@ -1,6 +1,6 @@
 # A Holiday application [![Build Status](https://travis-ci.org/kwood15/holiday-app.svg?branch=master)](https://travis-ci.org/kwood15/holiday-app) [![Coverage Status](https://img.shields.io/coveralls/github/kwood15/holiday-app/master.svg)](https://coveralls.io/github/kwood15/holiday-app?branch=master)
 
-> Built with React
+> Built with React and Express
 
 ## Get Started
 
@@ -14,10 +14,10 @@
 npm install
 ```
 
-**Start**
+**Run**
 
 ```
-npm start
+npm run dev
 ```
 
 **Lint**

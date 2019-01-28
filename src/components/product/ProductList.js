@@ -12,18 +12,23 @@ class ProductList extends Component {
   };
 
   componentDidMount() {
-    this.getHolidays();
+    this.getHolidays()
+      .then(res => this.setState({
+        holidays: res.holidays.Holidays,
+        filteredHolidays: res.holidays.Holidays
+      }))
+      .catch(error => this.setState({ error }));
   }
 
   componentWillReceiveProps() {
     this.filterHolidays();
   }
 
-  getHolidays = () => {
-    fetch('/data/holidays.json')
-      .then(response => response.json())
-      .then(data => this.saveData(data))
-      .catch(error => this.setState({ error }));
+  getHolidays = async () => {
+    const response = await fetch('/api/holidays');
+    const body = await response.json();
+    if (response.status !== 200) throw Error(body.message);
+    return body;
   }
 
   filterHolidays = () => {
@@ -35,13 +40,6 @@ class ProductList extends Component {
     });
     this.setState({
       filteredHolidays
-    });
-  }
-
-  saveData(holidays) {
-    this.setState({
-      holidays: holidays.Holidays,
-      filteredHolidays: holidays.Holidays
     });
   }
 

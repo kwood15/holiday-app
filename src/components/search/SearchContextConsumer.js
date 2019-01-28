@@ -4,9 +4,7 @@ import SearchContext from './SearchContext';
 
 const WithSearchContext = () => (
   <SearchContext.Consumer>
-    {searchTerm => (
-      <ProductList searchTerm={searchTerm} />
-    )}
+    {searchTerm => <ProductList searchTerm={searchTerm} />}
   </SearchContext.Consumer>
 );
 

@@ -12,49 +12,30 @@ class ProductDetailView extends Component {
     holiday: {
       ImageUrls: []
     },
-    selectedSpecification: '',
     error: null
   };
 
   componentDidMount() {
-    this.getHoliday();
+    this.getHoliday()
+      .then(res => this.setState({
+        holiday: res.holiday.Holiday
+      }))
+      .catch(error => this.setState({ error }));
     this.htmlElement.classList.remove('u-lock-scroll');
   }
 
-  getHoliday = () => {
-    // const { match } = this.props;
-    fetch('/data/holiday.json')
-      .then(response => response.json())
-      .then(data => this.saveData(data))
-      .catch(error => this.setState({ error }));
-  }
-
-  handleRadioChange = (e) => {
-    this.setState({
-      selectedSpecification: e.target.value
-    });
-  }
-
-  handleSubmit = (e) => {
-    const { selectedSpecification } = this.state;
-    e.preventDefault();
-    if (selectedSpecification !== '') {
-      alert(`Chosen spec: ${selectedSpecification} submitted`);
-    } else {
-      alert('You must select a specification');
-    }
+  getHoliday = async () => {
+    const { match } = this.props;
+    const response = await fetch(`/api/holiday/${match.params.seoPath}/${match.params.productId}`);
+    const body = await response.json();
+    if (response.status !== 200) throw Error(body.message);
+    return body;
   }
 
   formatMarkup = stringToFormat => ({ __html: stringToFormat })
 
-  saveData(holiday) {
-    this.setState({
-      holiday: holiday.Holiday
-    });
-  }
-
   render() {
-    const { holiday, selectedSpecification, error } = this.state;
+    const { holiday, error } = this.state;
 
     const holidayImages = holiday.ImageUrls.map(image => ({
       thumbnail: image.ImageUrl,
