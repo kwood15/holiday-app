@@ -5,12 +5,12 @@ import { ModalBody } from '../ModalStyles';
 
 describe('<Modal /> component', () => {
   const props = {
-    modalRef: () => { },
-    buttonRef: () => { },
+    modalRef: () => {},
+    buttonRef: () => {},
     children: 'test children',
     openModal: true,
-    handleClose: () => { },
-    handleOutsideClick: () => { }
+    handleClose: () => {},
+    handleOutsideClick: () => {}
   };
 
   const handleCloseMock = jest.fn();
@@ -37,8 +37,18 @@ describe('<Modal /> component', () => {
 
   it('should render with children', () => {
     expect(wrapper.find(ModalBody).children()).toHaveLength(2);
-    expect(wrapper.find(ModalBody).childAt(0).text()).toEqual('close');
-    expect(wrapper.find(ModalBody).childAt(1).text()).toEqual('test children');
+    expect(
+      wrapper
+        .find(ModalBody)
+        .childAt(0)
+        .text()
+    ).toEqual('close');
+    expect(
+      wrapper
+        .find(ModalBody)
+        .childAt(1)
+        .text()
+    ).toEqual('test children');
   });
 
   it('should close the modal when the escape key is pressed and apply the correct class', () => {

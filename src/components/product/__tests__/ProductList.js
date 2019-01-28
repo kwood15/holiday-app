@@ -8,24 +8,29 @@ describe('<ProductList /> component', () => {
     fetch.resetMocks();
     fetch.mockResponseOnce(
       JSON.stringify({
-        Products: [
-          {
-            ProductId: 1,
-            Title: 'Good holiday'
-          },
-          {
-            ProductId: 2,
-            Title: 'Good good holiday'
-          },
-          {
-            ProductId: 3,
-            Title: 'A personalised holiday'
-          }
-        ]
+        holidays: {
+          Holidays: [
+            {
+              Availability: true,
+              Title: 'Mitsis Galini Wellness Spa Resort',
+              ProductId: 86884
+            },
+            {
+              Availability: true,
+              Title: 'Divani Meteora Club Hotel',
+              ProductId: 86885
+            },
+            {
+              Availability: true,
+              Title: 'Pilio Holiday Club',
+              ProductId: 86886
+            }
+          ]
+        }
       })
     );
 
-    const wrapper = shallow(<ProductList searchTerm="Good" />);
+    const wrapper = shallow(<ProductList searchTerm="Club" />);
 
     it('should make a call to the api', () => {
       expect(fetch.mock.calls.length).toEqual(1);
@@ -49,12 +54,12 @@ describe('<ProductList /> component', () => {
           .find(ProductItem)
           .at(0)
           .prop('id')
-      ).toEqual(1);
+      ).toEqual(86884);
     });
 
     it('should call a function when the component receives new data via the {searchTerm} prop', () => {
       wrapper.instance().componentWillReceiveProps();
-      wrapper.instance().filterProducts();
+      wrapper.instance().filterHolidays();
     });
 
     it('should render the correct number of products based on the value of the {searchTerm} prop', () => {

@@ -124,7 +124,7 @@ class ProductDetailModal extends Component {
               >
                 {holiday.Price.Value}
                 {' '}
-per person
+                per person
               </span>
             </div>
 

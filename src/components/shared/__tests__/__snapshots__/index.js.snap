@@ -1,0 +1,171 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Styled components renders the correct <BaseLink /> styles based on the {theme} prop values 1`] = `
+.c0 {
+  color: #0ea7b5;
+  border: 2px solid #0ea7b5;
+  background-color: #ffffff;
+  padding: 0.6rem 1rem;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.c0:hover,
+.c0:focus {
+  color: #0c457d;
+  border-color: #0c457d;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c0:disabled:hover,
+.c0:disabled:focus {
+  color: #505050;
+  border-color: #505050;
+}
+
+<a
+  className="c0"
+  href="/test"
+  onClick={[Function]}
+/>
+`;
+
+exports[`Styled components renders the correct <BreadcrumbLink /> styles based on the {theme} prop values 1`] = `
+.c0 {
+  color: #505050;
+}
+
+.c0.active {
+  color: #0ea7b5;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+}
+
+<a
+  aria-current={null}
+  className="c0"
+  href="/test"
+  onClick={[Function]}
+/>
+`;
+
+exports[`Styled components renders the correct <Button /> styles based on the {theme} prop values 1`] = `
+.c0 {
+  color: #0ea7b5;
+  border: 2px solid #0ea7b5;
+  background-color: #ffffff;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.c0:hover,
+.c0:focus {
+  color: #0c457d;
+  border-color: #0c457d;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.c0:disabled:hover,
+.c0:disabled:focus {
+  color: #505050;
+  border-color: #505050;
+}
+
+.c0.modal__close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 0;
+}
+
+<button
+  className="c0"
+/>
+`;
+
+exports[`Styled components renders the correct <ContainerWrapper /> styles based on the {theme} prop values 1`] = `
+.c0 {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+<div
+  className="c0"
+/>
+`;
+
+exports[`Styled components renders the correct <FooterWrapper /> styles based on the {theme} prop values 1`] = `
+.c0 {
+  margin-top: 32px;
+  background-color: #6bd2db;
+  box-shadow: 0 0 16px rgba(0,0,0,0.3);
+}
+
+<footer
+  className="c0"
+/>
+`;
+
+exports[`Styled components renders the correct <GlobalStyles /> styles based on the {theme} prop values 1`] = `null`;
+
+exports[`Styled components renders the correct <HeaderWrapper /> styles based on the {theme} prop values 1`] = `
+.c0 {
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 0 16px rgba(0,0,0,0.3);
+}
+
+<header
+  className="c0"
+/>
+`;
+
+exports[`Styled components renders the correct <Input /> styles based on the {theme} prop values 1`] = `
+.c0 {
+  font-size: 1rem;
+  border: 2px solid #e0e0e0;
+  padding: 0.6rem;
+}
+
+<input
+  className="c0"
+/>
+`;
+
+exports[`Styled components renders the correct <NavigationLink /> styles based on the {theme} prop values 1`] = `
+.c0 {
+  color: #505050;
+}
+
+.c0:hover,
+.c0:focus {
+  color: #0ea7b5;
+  border-bottom: 2px solid #ffbe4f;
+}
+
+<a
+  aria-current={null}
+  className="c0"
+  href="/test"
+  onClick={[Function]}
+/>
+`;
+
+exports[`Styled components renders the correct <UtilitiesStyles /> styles based on the {theme} prop values 1`] = `null`;

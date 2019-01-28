@@ -30,9 +30,9 @@ class ProductDetailView extends Component {
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
     return body;
-  }
+  };
 
-  formatMarkup = stringToFormat => ({ __html: stringToFormat })
+  formatMarkup = stringToFormat => ({ __html: stringToFormat });
 
   render() {
     const { holiday, error } = this.state;
@@ -97,7 +97,8 @@ class ProductDetailView extends Component {
 ProductDetailView.propTypes = {
   match: PropTypes.shape({
     params: PropTypes.shape({
-      xxx: PropTypes.string
+      seoPath: PropTypes.string,
+      productId: PropTypes.string
     }).isRequired
   }).isRequired
 };
