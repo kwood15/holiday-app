@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Flex, Box } from '@rebass/grid';
 import ReactStars from 'react-stars';
+import { Dropdown, DropdownItem } from '../shared/Dropdown';
 import {
   Button, QuantityButton, QuantityInput, BaseLink
 } from '../shared/SharedStyles';
@@ -12,13 +13,19 @@ class ProductDetailModal extends Component {
     quantity: 1
   };
 
+  // toggleOptions = () => {
+  //   this.setState(state => ({
+  //     showOptions: !state.showOptions
+  //   }));
+  // };
+
   increaseQuantity = (e) => {
     const { quantity } = this.state;
     e.preventDefault();
     this.setState({
       quantity: quantity + 1
     });
-  }
+  };
 
   decreaseQuantity = (e) => {
     const { quantity } = this.state;
@@ -28,19 +35,19 @@ class ProductDetailModal extends Component {
         quantity: quantity - 1
       });
     }
-  }
+  };
 
   handleChange = (e) => {
     this.setState({
       quantity: e.target.value
     });
-  }
+  };
 
   handleKeyDown = (e) => {
     if (e.key === 'Enter') {
       this.postForm();
     }
-  }
+  };
 
   postForm = () => {
     const { quantity } = this.state;
@@ -51,7 +58,7 @@ class ProductDetailModal extends Component {
     } else {
       alert('You must order a minimum of 1 and maximum of 10');
     }
-  }
+  };
 
   render() {
     const { quantity } = this.state;
@@ -160,9 +167,15 @@ class ProductDetailModal extends Component {
                 </QuantityButton>
               </fieldset>
 
+              <div className="dropdown">
+                <Dropdown>
+                  <DropdownItem>xxx</DropdownItem>
+                </Dropdown>
+              </div>
+
               <Flex className="product-ctas" pt={2} flexWrap="wrap">
                 <Flex pr={3} pt={3}>
-                  <Button className="primary">Buy now</Button>
+                  <Button className="primary">Book now</Button>
                 </Flex>
                 <Flex pt={3}>
                   <BaseLink

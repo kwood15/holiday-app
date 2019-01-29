@@ -53,6 +53,10 @@ export const GlobalStyles = createGlobalStyle`
     color: ${props => props.theme.headingColor};
   }
 
+  h1 {
+    font-size: 1.5rem;
+  }
+
   legend {
     font-weight: bold;
     color: ${props => props.theme.primaryColor};

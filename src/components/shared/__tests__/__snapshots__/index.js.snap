@@ -118,6 +118,10 @@ exports[`Styled components renders the correct <FooterWrapper /> styles based on
   box-shadow: 0 0 16px rgba(0,0,0,0.3);
 }
 
+.c0 .footer__copy {
+  color: #ffffff;
+}
+
 <footer
   className="c0"
 />

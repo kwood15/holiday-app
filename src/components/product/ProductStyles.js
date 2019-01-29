@@ -2,16 +2,16 @@ import styled from 'styled-components';
 
 export const ProductWrapper = styled.div`
   padding: 1rem;
-  text-align: center;
   background: ${props => props.theme.white};
   box-shadow: 1px 1px 1px 1px rgba(243, 243, 243, 0.8);
 
   .product__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .product__rating {
-    justify-content: center;
     &-count {
       color: ${props => props.theme.midGrey};
     }

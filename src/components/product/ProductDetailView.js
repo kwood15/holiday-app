@@ -45,14 +45,14 @@ class ProductDetailView extends Component {
     return (
       <ProductDetailsWrapper className="product-details">
         <ProductTitle>Holiday Details</ProductTitle>
-        <Flex flexWrap="wrap" p={4}>
+        <Flex py={4}>
           {error ? (
             <div className="error-message">
               <p>Sorry there has been a problem with your request</p>
             </div>
           ) : (
-            <Flex className="product-detail">
-              <Flex width={[1, 1 / 2]} pr={4} className="product-images">
+            <Flex flexWrap="wrap" className="product-detail">
+              <Box width={[1, 1, 1 / 2]} pr={4} className="product-images">
                 <ImageGallery
                   lazyLoad
                   items={holidayImages}
@@ -63,8 +63,8 @@ class ProductDetailView extends Component {
                   thumbnailTitle={holiday.Title}
                   thumbnailAlt={holiday.SeoPath}
                 />
-              </Flex>
-              <Flex flexDirection="column" width={[1, 1 / 2]} className="product-description">
+              </Box>
+              <Box width={[1, 1, 1 / 2]} flexDirection="column" className="product-description">
                 <h1 className="product-description__title">{holiday.Title}</h1>
                 <p className="product-description__product-number">xxx</p>
                 <p
@@ -83,9 +83,9 @@ class ProductDetailView extends Component {
                   className="product-specification"
                   onSubmit={this.handleSubmit}
                 >
-                  <Button>Buy now</Button>
+                  <Button>Book now</Button>
                 </Box>
-              </Flex>
+              </Box>
             </Flex>
           )}
         </Flex>

@@ -2,9 +2,10 @@ import React, { Component, Fragment } from 'react';
 import PropTypes from 'prop-types';
 import ReactStars from 'react-stars';
 import { Flex } from '@rebass/grid';
+
 import Modal from '../modal/Modal';
 import ProductDetailModal from './ProductDetailModal';
-import { Button } from '../shared/SharedStyles';
+import { Button, BadgeWrapper } from '../shared/SharedStyles';
 import { ProductWrapper, ProductImage } from './ProductStyles';
 
 class ProductItem extends Component {
@@ -23,7 +24,7 @@ class ProductItem extends Component {
       () => this.closeButtonNode.focus()
     );
     this.htmlElement.classList.add('u-lock-scroll');
-  }
+  };
 
   hideModal = () => {
     this.setState(
@@ -33,12 +34,12 @@ class ProductItem extends Component {
       () => this.openButtonNode.focus()
     );
     this.htmlElement.classList.remove('u-lock-scroll');
-  }
+  };
 
   handleOutsideClick = (e) => {
     if (this.modalNode && this.modalNode.contains(e.target)) return;
     this.hideModal();
-  }
+  };
 
   render() {
     const { openModal } = this.state;
@@ -46,12 +47,8 @@ class ProductItem extends Component {
     return (
       <Fragment>
         <ProductWrapper className="product" itemScope itemType="http://schema.org/Product">
-          <a
-            href="/"
-            className="product__link"
-            onClick={this.showModal}
-            title="View product details"
-          >
+          <a href="/" className="product__link" onClick={this.showModal} title="View details">
+            <BadgeWrapper text="Offer" secondary="true" />
             <h1 className="product__title">{holiday.Title}</h1>
             <ProductImage
               className="product__image"
@@ -104,7 +101,7 @@ class ProductItem extends Component {
               >
                 {holiday.Price.Value}
                 {' '}
-                per person
+per person
               </span>
             </div>
             <Button ref={node => (this.openButtonNode = node)}>View details</Button>

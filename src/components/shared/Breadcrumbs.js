@@ -31,7 +31,7 @@ export const Breadcrumbs = () => (
         itemType="http://schema.org/ListItem"
       >
         <BreadcrumbLink
-          to="/holiday/"
+          to="/holidays"
           itemProp="item"
           className="breadcrumbs__link"
           activeClassName="active"

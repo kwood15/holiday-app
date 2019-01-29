@@ -1,6 +1,7 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { Link, NavLink } from 'react-router-dom';
 import { Box } from '@rebass/grid';
+import Badge from './Badge';
 
 export const HeaderWrapper = styled.header`
   background: ${props => props.theme.white};
@@ -121,4 +122,32 @@ export const FooterWrapper = styled.footer`
   margin-top: 32px;
   background-color: ${props => props.theme.footerColor};
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+
+  .footer__copy {
+    color: ${props => props.theme.white};
+  }
+`;
+
+export const BadgeWrapper = styled(Badge)`
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: ${props => props.theme.white};
+  background-color: ${props => props.theme.primaryColor};
+
+  ${props => props.primary
+    && css`
+      background-color: ${props.theme.primaryColor};
+    `};
+
+  ${props => props.secondary
+    && css`
+      background-color: ${props.theme.secondaryColor};
+    `};
 `;
