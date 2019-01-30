@@ -41,7 +41,7 @@ class ProductList extends Component {
     this.setState({
       filteredHolidays
     });
-  }
+  };
 
   render() {
     const { filteredHolidays, error } = this.state;
@@ -54,12 +54,11 @@ class ProductList extends Component {
           </div>
         ) : (
           <Flex as="ul" flexWrap="wrap" className="product-results__list">
-            {filteredHolidays.map((holiday, index) => (
+            {filteredHolidays.map(holiday => (
               <Flex
                 as="li"
-                // eslint-disable-next-line react/no-array-index-key
-                key={index}
-                width={[1, 1 / 2, 1 / 4]}
+                key={holiday.ProductId}
+                width={[1, 1/2, 1/4]}
                 p={2}
               >
                 <ProductItem holiday={holiday} id={holiday.ProductId} />

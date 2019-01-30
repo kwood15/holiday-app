@@ -103,7 +103,7 @@ class ProductItem extends Component {
               >
                 {holiday.Price.Value}
                 {' '}
-per person
+                per person
               </span>
             </div>
             <Button ref={node => (this.openButtonNode = node)}>View details</Button>

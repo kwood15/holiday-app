@@ -17,7 +17,7 @@ import { Breadcrumbs } from './components/shared/Breadcrumbs';
 import { Main } from './components/shared/Main';
 import { Footer } from './components/shared/Footer';
 
-import './scss/main.scss';
+import '../node_modules/react-image-gallery/styles/scss/image-gallery.scss';
 
 library.add(faSearch);
 

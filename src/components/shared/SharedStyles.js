@@ -129,6 +129,9 @@ export const FooterWrapper = styled.footer`
 `;
 
 export const BadgeWrapper = styled(Badge)`
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
   width: 2.5rem;
   height: 2.5rem;
   display: flex;

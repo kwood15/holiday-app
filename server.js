@@ -9,8 +9,9 @@ app.get('/api/holidays', (req, res) => {
 });
 
 app.get('/api/holiday/:seoPath/:productId', (req, res) => {
-  // eslint-disable-next-line eqeqeq
-  const matchedHolidays = holidays.Holidays.filter(item => item.ProductId == req.params.productId);
+  const matchedHolidays = holidays.Holidays.filter(
+    item => item.ProductId.toString() === req.params.productId
+  );
   matchedHolidays.map(holiday => res.send({ holiday }));
 });
 

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const RadioLabel = ({
   className = '', children, htmlFor, ...rest
 }) => (
-  <label htmlFor={htmlFor} className={`control--radio ${className}`} {...rest}>
+  <label htmlFor={htmlFor} className={`control__label ${className}`} {...rest}>
     {children}
   </label>
 );

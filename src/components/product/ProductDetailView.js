@@ -2,7 +2,14 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Flex, Box } from '@rebass/grid';
 import ImageGallery from 'react-image-gallery';
-import { RadioGroup, RadioLabel, RadioInput } from '../shared/Form/Radio';
+
+import {
+  RadioWrapper,
+  RadioGroup,
+  RadioLabel,
+  RadioInput
+} from '../shared/Form/Radio';
+
 import { Button } from '../shared/SharedStyles';
 import { ProductDetailsWrapper, ProductTitle } from './ProductStyles';
 
@@ -71,7 +78,7 @@ class ProductDetailView extends Component {
             </div>
           ) : (
             <Flex flexWrap="wrap" className="product-detail">
-              <Box width={[1, 1, 1 / 2]} pr={4} className="product-images">
+              <Box width={[1, 1, 1 / 2]} className="product-images">
                 <ImageGallery
                   lazyLoad
                   items={holidayImages}
@@ -85,7 +92,9 @@ class ProductDetailView extends Component {
               </Box>
               <Box width={[1, 1, 1 / 2]} flexDirection="column" className="product-description">
                 <h1 className="product-description__title">{holiday.Title}</h1>
-                <p className="product-description__address">{holiday.Address}</p>
+                <p className="product-description__address u-color-tertiary u-font-italic">
+                  {holiday.Address}
+                </p>
                 <p
                   className="product-description__text"
                   // eslint-disable-next-line react/no-danger
@@ -105,17 +114,19 @@ class ProductDetailView extends Component {
                   <fieldset className="product-specification__fields">
                     <legend>Select a room type:</legend>
                     {holiday.RoomTypes.map(roomType => (
-                      <RadioGroup key={roomType.RoomTypeId}>
-                        <RadioLabel htmlFor={roomType.RoomType.split(' ').join('')}>
-                          {roomType.RoomType}
-                          <RadioInput
-                            onChange={this.handleChange}
-                            value={roomType.RoomType}
-                            checked={selectedRoomOption === roomType.RoomType}
-                            id={roomType.RoomType.split(' ').join('')}
-                          />
-                        </RadioLabel>
-                      </RadioGroup>
+                      <RadioWrapper key={roomType.RoomTypeId}>
+                        <RadioGroup>
+                          <RadioLabel htmlFor={roomType.RoomType.split(' ').join('')}>
+                            {roomType.RoomType}
+                            <RadioInput
+                              onChange={this.handleChange}
+                              value={roomType.RoomType}
+                              checked={selectedRoomOption === roomType.RoomType}
+                              id={roomType.RoomType.split(' ').join('')}
+                            />
+                          </RadioLabel>
+                        </RadioGroup>
+                      </RadioWrapper>
                     ))}
                   </fieldset>
                   <Button type="submit">Book now</Button>

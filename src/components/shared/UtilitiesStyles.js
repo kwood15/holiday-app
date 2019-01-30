@@ -39,4 +39,24 @@ export const UtilitiesStyles = createGlobalStyle`
     top: 0;
     left: 0;
   }
+
+  .u-color-primary {
+    color: ${props => props.theme.primaryColor};
+  }
+
+  .u-color-secondary {
+    color: ${props => props.theme.seondaryColor};
+  }
+
+  .u-color-tertiary {
+    color: ${props => props.theme.tertiaryColor};
+  }
+
+  .u-font-bold {
+   font-style: bold;
+  }
+
+  .u-font-italic {
+   font-style: italic;
+  }
 `;
