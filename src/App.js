@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import { Flex } from '@rebass/grid';
 import { ThemeProvider } from 'styled-components';
 
@@ -6,11 +6,15 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
+import { Loader } from './components/shared/Loader';
+import { LoaderWrapper } from './components/shared/Loader/LoaderStyles';
+
 import { GlobalStyles } from './components/shared/GlobalStyles';
 import { UtilitiesStyles } from './components/shared/UtilitiesStyles';
 import { Button, Input } from './components/shared/SharedStyles';
 
 import SearchContext from './components/search/SearchContext';
+
 import Container from './components/shared/Container';
 import { Header } from './components/shared/Header';
 import { Breadcrumbs } from './components/shared/Breadcrumbs';
@@ -41,6 +45,12 @@ export const theme = {
 const App = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
+  const [isLoading, setLoadingStatus] = useState(true);
+
+  useEffect(() => {
+    setLoadingStatus(false);
+  });
+
   const handleChange = e => setSearchTerm(e.target.value);
 
   return (
@@ -65,6 +75,11 @@ const App = () => {
             </Flex>
           </Header>
           <Container>
+            {isLoading && (
+              <LoaderWrapper>
+                <Loader />
+              </LoaderWrapper>
+            )}
             <Breadcrumbs />
             <Main />
           </Container>
