@@ -31,7 +31,7 @@ export const Breadcrumbs = () => {
               activeClassName="active"
             >
               <span itemProp="name">{breadcrumbLink.text}</span>
-              <meta itemProp="position" content={index} />
+              <meta itemProp="position" content={index + 1} />
             </BreadcrumbLink>
           </li>
         ))}

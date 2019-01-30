@@ -28,9 +28,8 @@ export const BaseLink = styled(Link)`
   border: 2px solid ${props => props.theme.primaryColor};
   background-color: ${props => props.theme.white};
   padding: 0.6rem 1rem;
-  letter-spacing: 1px;
-  font-size: 1rem;
-  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
 
   &:hover,
   &:focus {
@@ -71,8 +70,9 @@ export const Button = styled.button`
   border: 2px solid ${props => props.theme.primaryColor};
   background-color: ${props => props.theme.white};
   padding: 0.6rem 1rem;
-  font-size: 1rem;
+  font-size: 0.85rem;
   cursor: pointer;
+  text-transform: uppercase;
 
   &:hover,
   &:focus {

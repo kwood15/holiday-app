@@ -29,11 +29,9 @@ export const Header = ({ children }) => {
             <Logo src={logo} alt="Company logo" />
           </Link>
         </Box>
-
         <Box py={3} className="search">
           {children}
         </Box>
-
         <Flex as="nav" className="navigation">
           {navigationLinks.map(navlink => (
             <NavigationItem key={navlink.text} className="navigation__item">

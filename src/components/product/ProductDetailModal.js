@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Flex, Box } from '@rebass/grid';
 import ReactStars from 'react-stars';
-import { Dropdown, DropdownItem } from '../shared/Dropdown';
+import { Dropdown, DropdownItem } from '../shared/Form/Dropdown';
 import {
   Button, QuantityButton, QuantityInput, BaseLink
 } from '../shared/SharedStyles';
@@ -10,14 +10,15 @@ import { ProductWrapper, ProductImage } from './ProductStyles';
 
 class ProductDetailModal extends Component {
   state = {
-    quantity: 1
+    quantity: 1,
+    showOptions: true
   };
 
-  // toggleOptions = () => {
-  //   this.setState(state => ({
-  //     showOptions: !state.showOptions
-  //   }));
-  // };
+  toggleOptions = () => {
+    this.setState(state => ({
+      showOptions: !state.showOptions
+    }));
+  };
 
   increaseQuantity = (e) => {
     const { quantity } = this.state;
@@ -61,7 +62,7 @@ class ProductDetailModal extends Component {
   };
 
   render() {
-    const { quantity } = this.state;
+    const { quantity, showOptions } = this.state;
     const { holiday } = this.props;
     const isDisabled = quantity === 10;
 
@@ -133,7 +134,7 @@ class ProductDetailModal extends Component {
               >
                 {holiday.Price.Value}
                 {' '}
-per person
+                per person
               </span>
             </div>
 
@@ -169,11 +170,11 @@ per person
                 </QuantityButton>
               </fieldset>
 
-              <div className="dropdown">
+              {showOptions && (
                 <Dropdown>
-                  <DropdownItem>xxx</DropdownItem>
+                  <DropdownItem onClick={this.toggleOptions}>Test</DropdownItem>
                 </Dropdown>
-              </div>
+              )}
 
               <Flex className="product-ctas" pt={2} flexWrap="wrap">
                 <Flex pr={3} pt={3}>
