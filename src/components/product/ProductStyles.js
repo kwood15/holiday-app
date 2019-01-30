@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const ProductWrapper = styled.div`
   padding: 1rem;
   background: ${props => props.theme.white};
-  box-shadow: 1px 1px 1px 1px rgba(243, 243, 243, 0.8);
 
   .product__link {
     display: flex;
@@ -29,6 +28,8 @@ export const ProductWrapper = styled.div`
 
   .product__pricing {
     padding: 0.5rem 0;
+    color: ${props => props.theme.tertiaryColor};
+    font-weight: bold;
   }
 
   .product__image {
@@ -44,7 +45,6 @@ export const ProductImage = styled.img`
 `;
 
 export const ProductTitle = styled.h1`
-  text-align: center;
   border-bottom: 1px dotted ${props => props.theme.lightGrey};
   padding-bottom: 1rem;
 `;

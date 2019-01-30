@@ -6,7 +6,7 @@ export const ModalWrapper = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.75);
   cursor: pointer;
   z-index: 2;
 `;
@@ -14,7 +14,7 @@ export const ModalWrapper = styled.div`
 export const ModalBody = styled.div`
   position: fixed;
   background: ${props => props.theme.white};
-  box-shadow: 0px 0px 16px rgba(0,0,0,0.6);
+  box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.6);
   width: 100%;
   padding: 64px 20px 40px;
   max-width: 600px;

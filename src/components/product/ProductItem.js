@@ -49,7 +49,7 @@ class ProductItem extends Component {
         <ProductWrapper className="product" itemScope itemType="http://schema.org/Product">
           <a href="/" className="product__link" onClick={this.showModal} title="View details">
             <BadgeWrapper text="Offer" secondary="true" />
-            <h1 className="product__title">{holiday.Title}</h1>
+            <h1 className="product__title u-text-center">{holiday.Title}</h1>
             <ProductImage
               className="product__image"
               itemProp="image"
@@ -71,13 +71,15 @@ class ProductItem extends Component {
                   edit={false}
                   half
                 />
-                <span className="product__rating-value" itemProp="ratingValue">
+                <span className="product__rating-value u-visually-hidden" itemProp="ratingValue">
+                  Average star rating count:
                   {holiday.Reviews.AverageStarRating}
                 </span>
+                <span className="u-visually-hidden">Review count:</span>
                 <span className="product__rating-count" itemProp="ratingCount">
                   (
                   {holiday.Reviews.ReviewCount}
-)
+                  )
                 </span>
               </Flex>
             ) : null}

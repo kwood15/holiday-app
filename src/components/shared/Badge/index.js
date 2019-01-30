@@ -1,8 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Badge = ({ className, text, ...props }) => (
-  <span className={`badge ${className || ''}`} {...props}>
+const Badge = ({ className, text, ...rest }) => (
+  <span className={`badge ${className}`} {...rest}>
     {text}
   </span>
 );

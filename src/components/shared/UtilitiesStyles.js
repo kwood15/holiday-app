@@ -1,10 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const UtilitiesStyles = createGlobalStyle`
-  *:focus {
-    outline: 2px dotted ${props => props.theme.primaryColor};
-  }
-
   .u-separator {
     color: ${props => props.theme.textColor};
     padding: 0 4px;

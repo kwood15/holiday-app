@@ -7,6 +7,7 @@
       },
       "Availability": true,
       "Title": "Mitsis Galini Wellness Spa Resort",
+      "Address": "5, Ger. Vasiliadi, Kamena Vourla, Greece 35008",
       "ProductId": 86884,
       "Description": "Close to Athens (150 km to the North), the hotel Galini Wellness Spa & Resort nestles in a valley of eucalyptus trees, an ideal starting point for extensive walking and hiking tours, for trips to the nearby ski centre of Parnassos mountain or for excursions to the Meteora, Delphi, Thermopiles and many other points of interest. This 5-star resort offers views of a charming courtyard, and offers 224 contemporary rooms. It provides family-friendly amenities, with room designs and services for families of all sizes, plus a playground and a kids pool. It also offers a sun deck with impressive sea and pool views. Every room at Mitsis Galini Wellness Spa & Resort comes with a kitchenette and a mini bar, and the bathrooms offer slippers and bathrobes. Each provides a variety of entertainment amenities, including a CD player and a DVD player.",
       "SeoPath": "mitsis-galini-wellness-spa-resort",
@@ -42,9 +43,19 @@
         }
       ],
       "Reviews": {
-        "AverageStarReviewRating": 4.8517,
+        "AverageStarRating": 4.8517,
         "ReviewCount": 29
-      }
+      },
+      "RoomTypes": [
+        {
+          "RoomTypeId": 1,
+          "RoomType": "Double or Twin Mountain View"
+        },
+        {
+          "RoomTypeId": 2,
+          "RoomType": "Double or Twin Room Sea View"
+        }
+      ]
     },
     {
       "Price": {
@@ -53,6 +64,7 @@
       },
       "Availability": true,
       "Title": "Kalafati Hotel Itea",
+      "Address": "Gionas ,1 33200, Itea",
       "ProductId": 86885,
       "Description": "This elegant hotel boasts a privileged setting in Itea, overlooking the picturesque Krissaios Gulf with mountains in the background. The establishment lies within a short car drive from Delphi, Galaxidi, and Arachova, allowing visitors to easily discover the beauty and rich culture. The property offers air-conditioned and beautifully adorned rooms in which to completely recharge one's batteries after all day of touring into the city. They feature natural tones, comfortable furniture and balcony with beautiful views over the city and sea. Some of the rooms have a jacuzzi for added guests convenience. In the morning, visitors may delight in a rich and tasty breakfast to provide energy to start the day. Afterwards, patrons may enjoy a drink and chat with friends at the charming bar with a lounge. In case of a query guests may turn to friendly hotel staff at 24-hour reception.",
       "SeoPath": "kalafati-hotel-itea",
@@ -86,17 +98,25 @@
         }
       ],
       "Reviews": {
-        "AverageStarReviewRating": 4.5,
+        "AverageStarRating": 4.5,
         "ReviewCount": 18
-      }
+      },
+      "RoomTypes": [
+        {
+          "RoomTypeId": 1,
+          "RoomType": "Double or Twin Mountain View"
+        },
+        {
+          "RoomTypeId": 2,
+          "RoomType": "Double or Twin Room Sea View"
+        }
+      ]
     },
     {
-      "Price": {
-        "Value": 1206,
-        "Currency": "£"
-      },
+      "Price": { "Value": 1206, "Currency": "£" },
       "Availability": true,
       "Title": "Pilio Holiday Club",
+      "Address": "Tsagarada - Mylopotamos Road, Tsagarada, 37012, Greece",
       "ProductId": 86886,
       "Description": "Surrounded by the rich greenery of Mount Pilio, this traditionally-built, 4-star hotel is located 1.5 km from Mylopotamos Beach, offering mountain and Aegean Sea views. The hotel features a pool and a traditional restaurant. All air-conditioned rooms are furnished to reflect the local tradition and have balconies. A TV and a mini bar are standard. Some room types offer four-poster beds and views of Mylopotamos Beach. The lounge room features a satellite TV and a fireplace. Younger guests have fun at the playground in the garden. Free WiFi access is provided in the reception and pool area. Staff can offer information on nearby attractions such as the traditional village of Tsagarada and the ski resort in Hania. The scenic Ntamouchari Beach is 8 km away.",
       "SeoPath": "pilio-holiday-club",
@@ -129,10 +149,17 @@
           "ImageUrl": "https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/49002/Pilio%20holidays%20(5)_5697_Gallery.jpg"
         }
       ],
-      "Reviews": {
-        "AverageStarReviewRating": 3.5713,
-        "ReviewCount": 9
-      }
+      "Reviews": { "AverageStarRating": 3.5713, "ReviewCount": 9 },
+      "RoomTypes": [
+        {
+          "RoomTypeId": 1,
+          "RoomType": "Double or Twin Mountain View"
+        },
+        {
+          "RoomTypeId": 2,
+          "RoomType": "Double or Twin Room Sea View"
+        }
+      ]
     },
     {
       "Price": {
@@ -141,6 +168,7 @@
       },
       "Availability": true,
       "Title": "Cavo Olympo Luxury Resort & Spa",
+      "Address": "Litóchoron, Plaka Litochorou, 60200, Greece",
       "ProductId": 86887,
       "Description": "Cavo Olympo Luxury Resort & Spa features an indoor and an outdoor pool and its own private beach in Plaka Litochorou of Pieria. Including a gym and a spa centre, this luxurious hotel offers a bar and a restaurant and a variety of entertainment options. The air-conditioned rooms and suites of Cavo Olympo open out to a private balcony overlooking Thermaikos Gulf or Mount Olympus. Each is modernly decorated and features a seating area with a flat-screen TV and minibar. Continental breakfast is served at the on-site restaurant, where guests can also enjoy Greek and Mediterranean dishes. Refreshing drinks, coffees and cocktails are served at the hotel’s bar.The resort has an extensive wine cellar stocked with regional wines. Leisure facilities include a games room, massage treatments and a small library. Staff at the 24-hour front desk can arrange babysitting and can provide car rental services. Room service is available. Cavo Olympo Luxury Resort is located 2 km from Litochoro Village and 20 km from the town of Katerini. Palios Panteleimon Village is at 18 km. Free private parking is possible on site.",
       "SeoPath": "cavo-olympo-luxury-resort-and-spa",
@@ -174,9 +202,19 @@
         }
       ],
       "Reviews": {
-        "AverageStarReviewRating": 4.5,
+        "AverageStarRating": 4.5,
         "ReviewCount": 19
-      }
+      },
+      "RoomTypes": [
+        {
+          "RoomTypeId": 1,
+          "RoomType": "Double or Twin Mountain View"
+        },
+        {
+          "RoomTypeId": 2,
+          "RoomType": "Double or Twin Room Sea View"
+        }
+      ]
     },
     {
       "Price": {
@@ -185,6 +223,7 @@
       },
       "Availability": true,
       "Title": "Ouzas Hotel",
+      "Address": "Areos 14, Olympic Beach 601 00",
       "ProductId": 86888,
       "Description": "Ouzas Hotel is located in Olympiaki­ Akti, offering a barbecue and views of the garden­. This apartment hotel is ideal for families and groups as well as couples and business travellers. The area is popular for skiing and diving. Elatochori is 29 km from Ouzas Hotel, while Paralia Katerinis is 3.1 km from the property. Thessaloniki Airport is 46 km away. The hotel has a ski pass sales point and ski storage space, and guests can enjoy a drink at the bar. Free private parking is available on site. There is a 24-hour front desk at the property. Guests may take advantage of the Apartment hotel 's Laundry service and the hotel is wheelchair-accessible. Large pets are allowed at this establishment. A terrace or balcony are featured in certain rooms. All rooms include a private bathroom. The hotel features free Wi-Fi throughout the property.",
       "SeoPath": "ouzas-hotel",
@@ -220,9 +259,19 @@
         }
       ],
       "Reviews": {
-        "AverageStarReviewRating": 5,
+        "AverageStarRating": 2,
         "ReviewCount": 27
-      }
+      },
+      "RoomTypes": [
+        {
+          "RoomTypeId": 1,
+          "RoomType": "Double or Twin Mountain View"
+        },
+        {
+          "RoomTypeId": 2,
+          "RoomType": "Double or Twin Room Sea View"
+        }
+      ]
     },
     {
       "Price": {
@@ -231,6 +280,7 @@
       },
       "Availability": true,
       "Title": "Aroma Dryos Design Hotel",
+      "Address": "Mitsa, Metsovo 442 00, Greece",
       "ProductId": 86889,
       "Description": "Just 3 minutes from the centre of Metsovo, this hotel offers wonderful views of the mountains of Pindus and combines tradition with luxury and modern conveniences. In the winter, it is an excellent base for ski lovers due to its convenient proximity to the Politses and Karakoli ski centres. Local points of interest also include a number of churches and monasteries and a wine factory, which offers wine tours. Built in the spirit of traditional architecture, from stone and wood carved by hand, the hotel exudes warmth and hospitality from the entrance and lobby throughout the premises. Each room is furnished with one type of wood and named after it, and comes with a fireplace and balcony, which add to the unforgettable fairy-tale atmospere.",
       "SeoPath": "aroma-dryos-design-hotel",
@@ -264,9 +314,19 @@
         }
       ],
       "Reviews": {
-        "AverageStarReviewRating": 5,
+        "AverageStarRating": 5,
         "ReviewCount": 33
-      }
+      },
+      "RoomTypes": [
+        {
+          "RoomTypeId": 1,
+          "RoomType": "Double or Twin Mountain View"
+        },
+        {
+          "RoomTypeId": 2,
+          "RoomType": "Double or Twin Room Sea View"
+        }
+      ]
     },
     {
       "Price": {
@@ -275,6 +335,7 @@
       },
       "Availability": true,
       "Title": "Alexiou Hotel",
+      "Address": "Trikalon 144 B', Kalabaka, 42200, Greece",
       "ProductId": 86890,
       "Description": "This hotel is conveniently located on the main street of the mountain village Kalambaka in northern Greece. The property, which boasts eighteen comfortable rooms with panoramic views of the Meteora rocks, is an ideal base for winter sport enthusiasts and nature lovers alike. Guests can start their day with a homemade breakfast and later stroll into the village to explore the shops or savour scrumptious traditional cuisine in the local tavernas. The breath-taking rocks provide the perfect backdrop to the property, which is located just 4 km from the historic Meteora Monasteries, a group of six monasteries perched upon natural sandstone rock pillars. Guests can also enjoy daytrips to nearby attractions in the region, including the ski resort of Pertouli, the mountain village of Elati and Plastira Lake. The friendly staff will be delighted to arrange for excursions or car rental.",
       "SeoPath": "alexiou-hotel",
@@ -310,9 +371,19 @@
         }
       ],
       "Reviews": {
-        "AverageStarReviewRating": 3,
+        "AverageStarRating": 3,
         "ReviewCount": 22
-      }
+      },
+      "RoomTypes": [
+        {
+          "RoomTypeId": 1,
+          "RoomType": "Double or Twin Mountain View"
+        },
+        {
+          "RoomTypeId": 2,
+          "RoomType": "Double or Twin Room Sea View"
+        }
+      ]
     },
     {
       "Price": {
@@ -321,6 +392,7 @@
       },
       "Availability": true,
       "Title": "Philoxenia Hotel",
+      "Address": "3 Krinon, 34002, Lefkanti, Chalkida, Greece",
       "ProductId": 86891,
       "Description": "The self-contained units all have a fully equipped kitchenette, as well as a dining area and a spacious furnished balcony, where guests can enjoy their home-cooked meals on a backdrop of sweeping mountain or sea views. As an alternative to the beautiful beach, the hotel has a large swimming pool, which can meet the requirements of any age group, including children. The outdoor area comprises also a pool bar, where guests can enjoy a refreshing drink or a light meal. The restaurant overlooks the swimming pool area and serves complimentary breakfast in the morning and a rich variety of authentic Greek cuisine for lunch and dinner.",
       "SeoPath": "philoxenia-hotel",
@@ -356,9 +428,19 @@
         }
       ],
       "Reviews": {
-        "AverageStarReviewRating": 4.5,
+        "AverageStarRating": 4.5,
         "ReviewCount": 7
-      }
+      },
+      "RoomTypes": [
+        {
+          "RoomTypeId": 1,
+          "RoomType": "Double or Twin Mountain View"
+        },
+        {
+          "RoomTypeId": 2,
+          "RoomType": "Double or Twin Room Sea View"
+        }
+      ]
     }
   ]
 }

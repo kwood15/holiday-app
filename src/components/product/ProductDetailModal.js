@@ -97,13 +97,15 @@ class ProductDetailModal extends Component {
                   edit={false}
                   half
                 />
-                <span className="product__rating-value" itemProp="ratingValue">
+                <span className="product__rating-value u-visually-hidden" itemProp="ratingValue">
+                  Average star rating count:
                   {holiday.Reviews.AverageStarRating}
                 </span>
+                <span className="u-visually-hidden">Review count:</span>
                 <span className="product__rating-count" itemProp="ratingCount">
                   (
                   {holiday.Reviews.ReviewCount}
-)
+                  )
                 </span>
               </Flex>
             ) : null}
@@ -131,7 +133,7 @@ class ProductDetailModal extends Component {
               >
                 {holiday.Price.Value}
                 {' '}
-                per person
+per person
               </span>
             </div>
 

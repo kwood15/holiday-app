@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Flex, Box } from '@rebass/grid';
 import ImageGallery from 'react-image-gallery';
+import { RadioGroup, RadioLabel, RadioInput } from '../shared/Form/Radio';
 import { Button } from '../shared/SharedStyles';
 import { ProductDetailsWrapper, ProductTitle } from './ProductStyles';
 
@@ -10,8 +11,10 @@ class ProductDetailView extends Component {
 
   state = {
     holiday: {
-      ImageUrls: []
+      ImageUrls: [],
+      RoomTypes: []
     },
+    selectedRoomOption: '',
     error: null
   };
 
@@ -34,8 +37,20 @@ class ProductDetailView extends Component {
 
   formatMarkup = stringToFormat => ({ __html: stringToFormat });
 
+  handleChange = ({ target }) => {
+    this.setState({
+      selectedRoomOption: target.value
+    });
+  }
+
+  handleSubmit = (e) => {
+    const { selectedRoomOption } = this.state;
+    e.preventDefault();
+    alert(`selected: ${selectedRoomOption}`);
+  }
+
   render() {
-    const { holiday, error } = this.state;
+    const { holiday, selectedRoomOption, error } = this.state;
 
     const holidayImages = holiday.ImageUrls.map(image => ({
       thumbnail: image.ImageUrl,
@@ -44,7 +59,7 @@ class ProductDetailView extends Component {
 
     return (
       <ProductDetailsWrapper className="product-details">
-        <ProductTitle>Holiday Details</ProductTitle>
+        <ProductTitle className="u-text-center">Holiday Details</ProductTitle>
         <Flex py={4}>
           {error ? (
             <div className="error-message">
@@ -66,7 +81,7 @@ class ProductDetailView extends Component {
               </Box>
               <Box width={[1, 1, 1 / 2]} flexDirection="column" className="product-description">
                 <h1 className="product-description__title">{holiday.Title}</h1>
-                <p className="product-description__product-number">xxx</p>
+                <p className="product-description__address">{holiday.Address}</p>
                 <p
                   className="product-description__text"
                   // eslint-disable-next-line react/no-danger
@@ -83,7 +98,32 @@ class ProductDetailView extends Component {
                   className="product-specification"
                   onSubmit={this.handleSubmit}
                 >
-                  <Button>Book now</Button>
+                  <fieldset className="product-specification__fields">
+                    <legend>Select a room type:</legend>
+                    {holiday.RoomTypes.map(roomType => (
+                      <RadioGroup key={roomType.RoomTypeId}>
+                        <RadioLabel
+                          htmlFor={roomType.RoomType.split(' ').join('')}
+                        >
+                          {roomType.RoomType}
+                          <RadioInput
+                            onChange={this.handleChange}
+                            value={roomType.RoomType}
+                            checked={selectedRoomOption === roomType.RoomType}
+                            id={roomType.RoomType.split(' ').join('')}
+                          />
+                        </RadioLabel>
+                      </RadioGroup>
+                    ))}
+                  </fieldset>
+                </Box>
+                <Box
+                  as="form"
+                  py={3}
+                  className="product-specification"
+                  onSubmit={this.handleSubmit}
+                >
+                  <Button type="submit">Book now</Button>
                 </Box>
               </Box>
             </Flex>

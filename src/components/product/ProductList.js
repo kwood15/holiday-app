@@ -47,7 +47,7 @@ class ProductList extends Component {
     const { filteredHolidays, error } = this.state;
     return (
       <section className="product-results">
-        <ProductTitle>Holiday Resorts in Greece</ProductTitle>
+        <ProductTitle className="u-text-center">Holiday Resorts in Greece</ProductTitle>
         {error ? (
           <div className="error-message">
             <p>Sorry there has been a problem with your request</p>
