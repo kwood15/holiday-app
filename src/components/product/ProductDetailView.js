@@ -33,7 +33,7 @@ class ProductDetailView extends Component {
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
     return body;
-  };
+  }
 
   formatMarkup = stringToFormat => ({ __html: stringToFormat });
 
@@ -46,7 +46,11 @@ class ProductDetailView extends Component {
   handleSubmit = (e) => {
     const { selectedRoomOption } = this.state;
     e.preventDefault();
-    alert(`selected: ${selectedRoomOption}`);
+    if (selectedRoomOption !== '') {
+      alert(`Chosen room: ${selectedRoomOption} submitted`);
+    } else {
+      alert('You must select a room type');
+    }
   }
 
   render() {
@@ -102,9 +106,7 @@ class ProductDetailView extends Component {
                     <legend>Select a room type:</legend>
                     {holiday.RoomTypes.map(roomType => (
                       <RadioGroup key={roomType.RoomTypeId}>
-                        <RadioLabel
-                          htmlFor={roomType.RoomType.split(' ').join('')}
-                        >
+                        <RadioLabel htmlFor={roomType.RoomType.split(' ').join('')}>
                           {roomType.RoomType}
                           <RadioInput
                             onChange={this.handleChange}
@@ -116,13 +118,6 @@ class ProductDetailView extends Component {
                       </RadioGroup>
                     ))}
                   </fieldset>
-                </Box>
-                <Box
-                  as="form"
-                  py={3}
-                  className="product-specification"
-                  onSubmit={this.handleSubmit}
-                >
                   <Button type="submit">Book now</Button>
                 </Box>
               </Box>

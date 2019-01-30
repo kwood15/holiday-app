@@ -48,7 +48,17 @@ describe('<ProductDetailView /> component', () => {
           Reviews: {
             AverageStarReviewRating: 4.8517,
             ReviewCount: 29
-          }
+          },
+          RoomTypes: [
+            {
+              RoomTypeId: 1,
+              RoomType: 'Double or Twin Mountain View'
+            },
+            {
+              RoomTypeId: 2,
+              RoomType: 'Double or Twin Room Sea View'
+            }
+          ]
         }
       })
     );
@@ -63,8 +73,19 @@ describe('<ProductDetailView /> component', () => {
             ImageUrl:
               'https://d376emoj42ssbs.cloudfront.net/main/data/media/BookGreece/53033/53033_861009.jpg'
           }
+        ],
+        RoomTypes: [
+          {
+            RoomTypeId: 1,
+            RoomType: 'Double or Twin Mountain View'
+          },
+          {
+            RoomTypeId: 2,
+            RoomType: 'Double or Twin Room Sea View'
+          }
         ]
       },
+      selectedRoomOption: '',
       error: null
     });
 
@@ -117,6 +138,36 @@ describe('<ProductDetailView /> component', () => {
       expect(wrapper.find('.product-description__stock-status').html()).toEqual(
         '<p class="product-description__stock-status">Product Availability: <strong>Available</strong></p>'
       );
+    });
+
+    it('should call `preventDefault()` and an `alert()` without a radio button value when the form is submitted', () => {
+      const event = { preventDefault: () => {} };
+      window.alert = jest.fn();
+      jest.spyOn(event, 'preventDefault');
+
+      wrapper.find('form.product-specification').simulate('submit', event);
+      expect(event.preventDefault).toHaveBeenCalledTimes(1);
+      expect(window.alert).toHaveBeenCalledTimes(1);
+      expect(window.alert).toHaveBeenCalledWith('You must select a room type');
+    });
+
+    it('should set the state when a radio button is selected', () => {
+      wrapper
+        .find('input[type="radio"]')
+        .at(0)
+        .simulate('change', { target: { value: 'selected radio button' } });
+      expect(wrapper.state('selectedRoomOption')).toBe('selected radio button');
+    });
+
+    it('should call `preventDefault()` and an `alert()` with the selected radio button value when the form is submitted', () => {
+      const event = { preventDefault: () => {} };
+      window.alert = jest.fn();
+      jest.spyOn(event, 'preventDefault');
+
+      wrapper.find('form.product-specification').simulate('submit', event);
+      expect(event.preventDefault).toHaveBeenCalledTimes(1);
+      expect(window.alert).toHaveBeenCalledTimes(1);
+      expect(window.alert).toHaveBeenCalledWith('Chosen room: selected radio button submitted');
     });
   });
 
