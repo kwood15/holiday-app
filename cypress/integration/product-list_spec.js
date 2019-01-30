@@ -4,7 +4,7 @@ describe('Product List', () => {
     cy.contains('Home').click();
   });
 
-  it('should display a `holiday` link and go the the url when clicked', () => {
+  it('should display a `holidays` link and go the the url when clicked', () => {
     cy.contains('Holidays').click();
     cy.url().should('eq', 'http://localhost:3000/holidays');
   });
