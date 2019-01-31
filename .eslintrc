@@ -13,7 +13,6 @@
     "react/no-unused-state": "off",
     "import/prefer-default-export": "off",
     "react/require-default-props": "off",
-    "import/no-unresolved": "off",
     "comma-dangle": "off",
     "no-return-assign": "off",
     "no-alert": "off",

@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Footer } from '../Footer';
-import { FooterWrapper } from '../SharedStyles';
+import { Footer } from '..';
+import { FooterWrapper } from '../../SharedStyles';
 
 describe('<Footer /> component', () => {
   const wrapper = shallow(<Footer />);

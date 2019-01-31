@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Header } from '../Header';
-import { HeaderWrapper } from '../SharedStyles';
+import { Header } from '..';
+import { HeaderWrapper } from '../../SharedStyles';
 
 describe('<Header /> component', () => {
   const props = {

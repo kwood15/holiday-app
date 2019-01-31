@@ -1,9 +1,9 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { Breadcrumbs } from '../Breadcrumbs';
+import Container from '..';
 
-describe('<Breadcrumbs /> component', () => {
-  const wrapper = shallow(<Breadcrumbs />);
+describe('<Container /> component', () => {
+  const wrapper = shallow(<Container />);
 
   it('should render the component', () => {
     expect(wrapper.exists()).toBe(true);
