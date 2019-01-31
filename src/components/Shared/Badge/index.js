@@ -1,15 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Badge = ({ className = '', text, ...rest }) => (
+const Badge = ({ className, children, ...rest }) => (
   <span className={`badge ${className}`} {...rest}>
-    {text}
+    {children}
   </span>
 );
 
 Badge.propTypes = {
   className: PropTypes.string,
-  text: PropTypes.string.isRequired
+  children: PropTypes.node.isRequired
 };
 
 export default Badge;

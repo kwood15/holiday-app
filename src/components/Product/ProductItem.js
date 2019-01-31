@@ -48,7 +48,9 @@ class ProductItem extends Component {
       <Fragment>
         <ProductWrapper className="product" itemScope itemType="http://schema.org/Product">
           <a href="/" className="product__link" onClick={this.showModal} title="View details">
-            <BadgeWrapper text="Offer" secondary="true" />
+            <BadgeWrapper secondary="true">
+              Offer
+            </BadgeWrapper>
             <h1 className="product__title u-text-center">{holiday.Title}</h1>
             <ProductImage
               className="product__image"
