@@ -3,7 +3,7 @@ import ReactStars from 'react-stars';
 import { MemoryRouter } from 'react-router-dom';
 import { shallow, mount } from 'enzyme';
 import ProductItem from '../ProductItem';
-import Modal from '../../modal/Modal';
+import Modal from '../../Shared/Modal';
 import { ProductImage, ProductWrapper } from '../ProductStyles';
 
 describe('<ProductItem /> component', () => {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Flex } from '@rebass/grid';
-import { BreadcrumbLink } from './SharedStyles';
+import { BreadcrumbLink } from '../SharedStyles';
 
 export const Breadcrumbs = () => {
   const breadcrumbsLinks = [

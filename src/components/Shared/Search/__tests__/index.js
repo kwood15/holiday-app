@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
 import WithSearchContext from '../SearchContextConsumer';
-import ProductList from '../../product/ProductList';
+import ProductList from '../../../Product/ProductList';
 
 describe('<WithSearchContext/> component', () => {
   const wrapper = mount(<WithSearchContext />);

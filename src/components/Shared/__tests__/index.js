@@ -1,7 +1,7 @@
 import React from 'react';
 import 'jest-styled-components';
 import { MemoryRouter } from 'react-router-dom';
-import { renderWithTheme } from '../helpers';
+import { renderWithTheme } from '../../../utils/themeTest';
 import { GlobalStyles } from '../GlobalStyles';
 import { UtilitiesStyles } from '../UtilitiesStyles';
 import {

@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Flex, Box } from '@rebass/grid';
 import ReactStars from 'react-stars';
-import { Dropdown, DropdownItem } from '../shared/Form/Dropdown';
+
+import { Dropdown, DropdownItem } from '../Shared/Form/Dropdown';
+import { ProductWrapper, ProductImage } from './ProductStyles';
 import {
   Button, QuantityButton, QuantityInput, BaseLink
-} from '../shared/SharedStyles';
-import { ProductWrapper, ProductImage } from './ProductStyles';
+} from '../Shared/SharedStyles';
 
 class ProductDetailModal extends Component {
   state = {

@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import ReactStars from 'react-stars';
 import { Flex } from '@rebass/grid';
 
-import Modal from '../modal/Modal';
+import Modal from '../Shared/Modal';
 import ProductDetailModal from './ProductDetailModal';
-import { Button, BadgeWrapper } from '../shared/SharedStyles';
+import { Button, BadgeWrapper } from '../Shared/SharedStyles';
 import { ProductWrapper, ProductImage } from './ProductStyles';
 
 class ProductItem extends Component {

@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 import { Flex, Box } from '@rebass/grid';
 import {
   HeaderWrapper, Logo, NavigationItem, NavigationLink
-} from './SharedStyles';
+} from '../SharedStyles';
 
-import logo from '../../img/logo.svg';
+import logo from './logo.svg';
 
 export const Header = ({ children }) => {
   const navigationLinks = [

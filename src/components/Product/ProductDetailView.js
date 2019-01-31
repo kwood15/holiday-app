@@ -8,9 +8,9 @@ import {
   RadioGroup,
   RadioLabel,
   RadioInput
-} from '../shared/Form/Radio';
+} from '../Shared/Form/Radio';
 
-import { Button } from '../shared/SharedStyles';
+import { Button } from '../Shared/SharedStyles';
 import { ProductDetailsWrapper, ProductTitle } from './ProductStyles';
 
 class ProductDetailView extends Component {

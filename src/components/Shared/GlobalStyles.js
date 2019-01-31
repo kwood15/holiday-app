@@ -1,6 +1,8 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
   * {
     box-sizing: border-box;
   }
@@ -18,7 +20,6 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    @import url('https://fonts.googleapis.com/css?family=Open+Sans');
     font-family: 'Open Sans', sans-serif;
     height: 100%;
     background-color: ${props => props.theme.bodyColor};

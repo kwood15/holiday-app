@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Modal from '../Modal';
+import Modal from '..';
 import { ModalBody } from '../ModalStyles';
 
 describe('<Modal /> component', () => {

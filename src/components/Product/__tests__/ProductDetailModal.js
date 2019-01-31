@@ -2,7 +2,7 @@ import React from 'react';
 import ReactStars from 'react-stars';
 import { shallow } from 'enzyme';
 import ProductDetailModal from '../ProductDetailModal';
-import { QuantityButton, QuantityInput } from '../../shared/SharedStyles';
+import { QuantityButton, QuantityInput } from '../../Shared/SharedStyles';
 
 const holiday = {
   ProductId: 1,

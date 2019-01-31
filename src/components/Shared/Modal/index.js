@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { Button } from '../shared/SharedStyles';
+import { Button } from '../SharedStyles';
 import { ModalWrapper, ModalBody } from './ModalStyles';
 
 class Modal extends Component {
@@ -17,7 +17,7 @@ class Modal extends Component {
     if (keyCode === 27) {
       handleClose();
     }
-  }
+  };
 
   render() {
     const {
@@ -37,12 +37,7 @@ class Modal extends Component {
         aria-labelledby="dialog-overlay"
         onClick={handleOutsideClick}
       >
-        <ModalBody
-          className="modal__body"
-          ref={modalRef}
-          role="dialog"
-          aria-label="dialog"
-        >
+        <ModalBody className="modal__body" ref={modalRef} role="dialog" aria-label="dialog">
           <Button
             className="modal__close icon-close"
             aria-labelledby="close-modal"

@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Flex } from '@rebass/grid';
 
-import { Loader } from '../shared/Loader';
-import { LoaderWrapper } from '../shared/Loader/LoaderStyles';
+import { Loader } from '../Shared/Loader';
+import { LoaderWrapper } from '../Shared/Loader/LoaderStyles';
 
 import ProductItem from './ProductItem';
 import { ProductTitle } from './ProductStyles';

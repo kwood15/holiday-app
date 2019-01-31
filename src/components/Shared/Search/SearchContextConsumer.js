@@ -1,6 +1,6 @@
 import React from 'react';
-import ProductList from '../product/ProductList';
-import SearchContext from './SearchContext';
+import ProductList from '../../Product/ProductList';
+import SearchContext from '.';
 
 const WithSearchContext = () => (
   <SearchContext.Consumer>
