@@ -1,6 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Styled components renders the correct <BaseLink /> styles based on the {theme} prop values 1`] = `
+exports[`Styled components renders the <BadgeWrapper /> styles 1`] = `
+.c0 {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #0ea7b5;
+}
+
+<span
+  className="badge c0"
+>
+  test
+</span>
+`;
+
+exports[`Styled components renders the <BaseLink /> styles based on the {theme} prop values 1`] = `
 .c0 {
   color: #0ea7b5;
   border: 2px solid #0ea7b5;
@@ -34,7 +70,7 @@ exports[`Styled components renders the correct <BaseLink /> styles based on the 
 />
 `;
 
-exports[`Styled components renders the correct <BreadcrumbLink /> styles based on the {theme} prop values 1`] = `
+exports[`Styled components renders the <BreadcrumbLink /> styles based on the {theme} prop values 1`] = `
 .c0 {
   color: #505050;
 }
@@ -53,7 +89,7 @@ exports[`Styled components renders the correct <BreadcrumbLink /> styles based o
 />
 `;
 
-exports[`Styled components renders the correct <Button /> styles based on the {theme} prop values 1`] = `
+exports[`Styled components renders the <Button /> styles based on the {theme} prop values 1`] = `
 .c0 {
   color: #0ea7b5;
   border: 2px solid #0ea7b5;
@@ -93,7 +129,7 @@ exports[`Styled components renders the correct <Button /> styles based on the {t
 />
 `;
 
-exports[`Styled components renders the correct <ContainerWrapper /> styles based on the {theme} prop values 1`] = `
+exports[`Styled components renders the <ContainerWrapper /> styles based on the {theme} prop values 1`] = `
 .c0 {
   box-sizing: border-box;
   width: 100%;
@@ -108,7 +144,7 @@ exports[`Styled components renders the correct <ContainerWrapper /> styles based
 />
 `;
 
-exports[`Styled components renders the correct <FooterWrapper /> styles based on the {theme} prop values 1`] = `
+exports[`Styled components renders the <FooterWrapper /> styles based on the {theme} prop values 1`] = `
 .c0 {
   margin-top: 32px;
   background-color: #6bd2db;
@@ -124,9 +160,9 @@ exports[`Styled components renders the correct <FooterWrapper /> styles based on
 />
 `;
 
-exports[`Styled components renders the correct <GlobalStyles /> styles based on the {theme} prop values 1`] = `null`;
+exports[`Styled components renders the <GlobalStyles /> styles based on the {theme} prop values 1`] = `null`;
 
-exports[`Styled components renders the correct <HeaderWrapper /> styles based on the {theme} prop values 1`] = `
+exports[`Styled components renders the <HeaderWrapper /> styles based on the {theme} prop values 1`] = `
 .c0 {
   background: #ffffff;
   padding: 20px;
@@ -138,7 +174,7 @@ exports[`Styled components renders the correct <HeaderWrapper /> styles based on
 />
 `;
 
-exports[`Styled components renders the correct <Input /> styles based on the {theme} prop values 1`] = `
+exports[`Styled components renders the <Input /> styles based on the {theme} prop values 1`] = `
 .c0 {
   font-size: 1rem;
   border: 2px solid #e0e0e0;
@@ -150,7 +186,7 @@ exports[`Styled components renders the correct <Input /> styles based on the {th
 />
 `;
 
-exports[`Styled components renders the correct <NavigationLink /> styles based on the {theme} prop values 1`] = `
+exports[`Styled components renders the <NavigationLink /> styles based on the {theme} prop values 1`] = `
 .c0 {
   color: #505050;
 }
@@ -169,4 +205,4 @@ exports[`Styled components renders the correct <NavigationLink /> styles based o
 />
 `;
 
-exports[`Styled components renders the correct <UtilitiesStyles /> styles based on the {theme} prop values 1`] = `null`;
+exports[`Styled components renders the <UtilitiesStyles /> styles based on the {theme} prop values 1`] = `null`;
