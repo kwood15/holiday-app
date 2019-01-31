@@ -19,6 +19,12 @@ export const ContainerWrapper = styled(Box)`
   flex: 1;
 `;
 
+export const HeadingH1 = styled.h1`
+  border-bottom: 1px dotted ${props => props.theme.lightGrey};
+  padding-bottom: 1rem;
+  text-align: center;
+`;
+
 export const NavigationItem = styled.li`
   padding: 0 16px;
 `;
@@ -102,6 +108,7 @@ export const Input = styled.input`
   font-size: 1rem;
   border: 2px solid ${props => props.theme.lightGrey};
   padding: 0.6rem;
+  appearance: none;
 `;
 
 export const QuantityButton = styled(Button)`

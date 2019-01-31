@@ -4,14 +4,11 @@ import { Flex, Box } from '@rebass/grid';
 import ImageGallery from 'react-image-gallery';
 
 import {
-  RadioWrapper,
-  RadioGroup,
-  RadioLabel,
-  RadioInput
+  RadioWrapper, RadioGroup, RadioLabel, RadioInput
 } from '../Shared/Form/Radio';
 
-import { Button } from '../Shared/SharedStyles';
-import { ProductDetailsWrapper, ProductTitle } from './ProductStyles';
+import { Button, HeadingH1 } from '../Shared/SharedStyles';
+import { ProductDetailsWrapper } from './ProductStyles';
 
 class ProductDetailView extends Component {
   htmlElement = document.querySelector('html');
@@ -40,7 +37,7 @@ class ProductDetailView extends Component {
     const body = await response.json();
     if (response.status !== 200) throw Error(body.message);
     return body;
-  }
+  };
 
   formatMarkup = stringToFormat => ({ __html: stringToFormat });
 
@@ -48,7 +45,7 @@ class ProductDetailView extends Component {
     this.setState({
       selectedRoomOption: target.value
     });
-  }
+  };
 
   handleSubmit = (e) => {
     const { selectedRoomOption } = this.state;
@@ -58,7 +55,7 @@ class ProductDetailView extends Component {
     } else {
       alert('You must select a room type');
     }
-  }
+  };
 
   render() {
     const { holiday, selectedRoomOption, error } = this.state;
@@ -70,7 +67,7 @@ class ProductDetailView extends Component {
 
     return (
       <ProductDetailsWrapper className="product-details">
-        <ProductTitle className="u-text-center">Holiday Details</ProductTitle>
+        <HeadingH1>Holiday Details</HeadingH1>
         <Flex py={4}>
           {error ? (
             <div className="error-message">

@@ -1,6 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Raleway:500,600');
   @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
   * {
@@ -51,15 +52,11 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
     color: ${props => props.theme.headingColor};
   }
 
-  h1 {
-    font-size: 1.5rem;
-  }
-
   legend {
-    font-weight: bold;
     color: ${props => props.theme.primaryColor};
   }
 

@@ -4,9 +4,8 @@ import { Flex } from '@rebass/grid';
 
 import { Loader } from '../Shared/Loader';
 import { LoaderWrapper } from '../Shared/Loader/LoaderStyles';
-
 import ProductItem from './ProductItem';
-import { ProductTitle } from './ProductStyles';
+import { HeadingH1 } from '../Shared/SharedStyles';
 
 class ProductList extends Component {
   state = {
@@ -36,17 +35,16 @@ class ProductList extends Component {
   getHolidays = async () => {
     const response = await fetch('/api/holidays');
     const body = await response.json();
-    if (response.status !== 200) throw Error(body.message);
+    if (response.status !== 200) throw new Error(body.message);
     return body;
   };
 
   filterHolidays = () => {
     const { holidays } = this.state;
     const { searchTerm } = this.props;
-    // eslint-disable-next-line arrow-body-style
-    const filteredHolidays = holidays.filter((holiday) => {
-      return holiday.Title.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1;
-    });
+    const filteredHolidays = holidays.filter(
+      holiday => holiday.Title.toLowerCase().indexOf(searchTerm.toLowerCase()) > -1
+    );
     this.setState({
       filteredHolidays
     });
@@ -56,7 +54,7 @@ class ProductList extends Component {
     const { filteredHolidays, isLoading, error } = this.state;
     return (
       <section className="product-results">
-        <ProductTitle className="u-text-center">Holiday Resorts in Greece</ProductTitle>
+        <HeadingH1>Holiday Resorts in Greece</HeadingH1>
         {isLoading && (
           <LoaderWrapper>
             <Loader />

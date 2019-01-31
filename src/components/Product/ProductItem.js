@@ -51,13 +51,15 @@ class ProductItem extends Component {
             <BadgeWrapper secondary="true">
               Offer
             </BadgeWrapper>
-            <h1 className="product__title u-text-center">{holiday.Title}</h1>
-            <ProductImage
-              className="product__image"
-              itemProp="image"
-              src={holiday.ProductImage.Link.Href}
-              alt={holiday.SeoPath}
-            />
+            <h3 className="product__title u-text-center">{holiday.Title}</h3>
+            <div className="product-image-wrapper">
+              <ProductImage
+                className="product__image"
+                itemProp="image"
+                src={holiday.ProductImage.Link.Href}
+                alt={holiday.SeoPath}
+              />
+            </div>
             {holiday.Reviews.ReviewCount ? (
               <Flex
                 alignItems="center"

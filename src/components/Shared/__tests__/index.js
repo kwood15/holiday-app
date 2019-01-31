@@ -79,7 +79,7 @@ describe('Styled components', () => {
     expect(tree).toMatchSnapshot();
   });
 
-  it('renders the <BadgeWrapper /> styles', () => {
+  it('renders the <BadgeWrapper /> styles based on the {theme} prop values', () => {
     const tree = renderWithTheme(<BadgeWrapper>test</BadgeWrapper>).toJSON();
     expect(tree).toMatchSnapshot();
   });

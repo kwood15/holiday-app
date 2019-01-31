@@ -4,7 +4,7 @@ import { ThemeProvider } from 'styled-components';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faHome } from '@fortawesome/free-solid-svg-icons';
 
 import { LoaderWrapper } from './components/Shared/Loader/LoaderStyles';
 import { GlobalStyles } from './components/Shared/GlobalStyles';
@@ -21,7 +21,7 @@ import { Footer } from './components/Shared/Footer';
 
 import '../node_modules/react-image-gallery/styles/scss/image-gallery.scss';
 
-library.add(faSearch);
+library.add(faSearch, faHome);
 
 export const theme = {
   textColor: '#505050',
@@ -49,7 +49,16 @@ const App = () => {
     setLoadingStatus(false);
   });
 
-  const handleChange = e => setSearchTerm(e.target.value);
+  const handleChange = ({ target }) => setSearchTerm(target.value);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (searchTerm) {
+      alert(`Submitted with: ${searchTerm}`);
+    } else {
+      alert('Please enter at least one character');
+    }
+  };
 
   return (
     <ThemeProvider theme={theme}>
@@ -59,16 +68,20 @@ const App = () => {
         <SearchContext.Provider value={searchTerm}>
           <Header>
             <Flex as="form" className="form form--search">
+              <label htmlFor="site-search" className="u-visually-hidden">
+                Search for a holiday
+              </label>
               <Input
+                id="site-search"
                 className="form__input"
                 type="search"
                 placeholder="Search holidays..."
                 onChange={handleChange}
                 value={searchTerm}
               />
-              <Button type="submit" className="form__btn">
-                <FontAwesomeIcon icon="search" />
+              <Button type="submit" className="form__btn" onClick={handleSubmit}>
                 <span>Search</span>
+                <FontAwesomeIcon icon="search" size="lg" flip="horizontal" pull="right" />
               </Button>
             </Flex>
           </Header>

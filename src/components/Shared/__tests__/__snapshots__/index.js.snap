@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Styled components renders the <BadgeWrapper /> styles 1`] = `
+exports[`Styled components renders the <BadgeWrapper /> styles based on the {theme} prop values 1`] = `
 .c0 {
   position: absolute;
   top: -0.5rem;
@@ -179,6 +179,9 @@ exports[`Styled components renders the <Input /> styles based on the {theme} pro
   font-size: 1rem;
   border: 2px solid #e0e0e0;
   padding: 0.6rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 <input

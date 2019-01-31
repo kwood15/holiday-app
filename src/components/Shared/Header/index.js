@@ -39,6 +39,7 @@ export const Header = ({ children }) => {
                 to={navlink.path}
                 activeClassName="active"
                 className="navigation__link"
+                title={navlink.text}
               >
                 {navlink.text}
               </NavigationLink>
