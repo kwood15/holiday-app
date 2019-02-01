@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Flex, Box } from '@rebass/grid';
 import ReactStars from 'react-stars';
 
-import { Dropdown, DropdownItem } from '../Shared/Form/Dropdown';
 import { ProductWrapper, ProductImage } from './ProductStyles';
 import {
   Button, QuantityButton, QuantityInput, BaseLink
@@ -11,14 +10,7 @@ import {
 
 class ProductDetailModal extends Component {
   state = {
-    quantity: 1,
-    showOptions: true
-  };
-
-  toggleOptions = () => {
-    this.setState(state => ({
-      showOptions: !state.showOptions
-    }));
+    quantity: 1
   };
 
   increaseQuantity = (e) => {
@@ -63,7 +55,7 @@ class ProductDetailModal extends Component {
   };
 
   render() {
-    const { quantity, showOptions } = this.state;
+    const { quantity } = this.state;
     const { holiday } = this.props;
     const isDisabled = quantity === 10;
 
@@ -170,12 +162,6 @@ class ProductDetailModal extends Component {
                   <span className="product-quantity__text">+</span>
                 </QuantityButton>
               </fieldset>
-
-              {showOptions && (
-                <Dropdown>
-                  <DropdownItem onClick={this.toggleOptions}>Test</DropdownItem>
-                </Dropdown>
-              )}
 
               <Flex className="product-ctas" pt={2} flexWrap="wrap">
                 <Flex pr={3} pt={3}>

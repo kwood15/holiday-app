@@ -4,6 +4,7 @@ import { Flex } from '@rebass/grid';
 
 import { Loader } from '../Shared/Loader';
 import { LoaderWrapper } from '../Shared/Loader/LoaderStyles';
+import Dropdown from '../Shared/Form/Dropdown';
 import ProductItem from './ProductItem';
 import { HeadingH1 } from '../Shared/SharedStyles';
 
@@ -65,12 +66,17 @@ class ProductList extends Component {
             <p>Sorry there has been a problem with your request</p>
           </div>
         ) : (
-          <Flex as="ul" flexWrap="wrap" className="product-results__list">
-            {filteredHolidays.map(holiday => (
-              <Flex as="li" key={holiday.ProductId} width={[1, 1 / 2, 1 / 4]} p={2}>
-                <ProductItem holiday={holiday} id={holiday.ProductId} />
-              </Flex>
-            ))}
+          <Flex flexDirection="column">
+            <Flex alignSelf="flex-end" width={[1, 1 / 2, 1 / 4]} px={2} pb={4}>
+              <Dropdown />
+            </Flex>
+            <Flex as="ul" flexWrap="wrap" className="product-results__list">
+              {filteredHolidays.map(holiday => (
+                <Flex as="li" key={holiday.ProductId} width={[1, 1 / 2, 1 / 4]} p={2}>
+                  <ProductItem holiday={holiday} id={holiday.ProductId} />
+                </Flex>
+              ))}
+            </Flex>
           </Flex>
         )}
       </section>

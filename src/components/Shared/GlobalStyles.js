@@ -23,6 +23,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Open Sans', sans-serif;
     height: 100%;
+    color: ${props => props.theme.textColor};
     background-color: ${props => props.theme.bodyColor};
     font-size: 1rem;
     line-height: 1.2;

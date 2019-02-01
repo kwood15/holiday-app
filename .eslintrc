@@ -11,11 +11,12 @@
   "rules": {
     "react/jsx-filename-extension": "off",
     "react/no-unused-state": "off",
-    "import/prefer-default-export": "off",
     "react/require-default-props": "off",
-    "comma-dangle": "off",
+    "react/destructuring-assignment": ["always", { "ignoreClassFields": true }],
+    "import/prefer-default-export": "off",
     "no-return-assign": "off",
     "no-alert": "off",
+    "comma-dangle": "off",
     "space-infix-ops": "off",
     "jsx-a11y/label-has-associated-control": [
       "error",

@@ -4,7 +4,9 @@ import { ThemeProvider } from 'styled-components';
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faHome } from '@fortawesome/free-solid-svg-icons';
+import {
+  faSearch, faHome, faAngleUp, faAngleDown, faCheck
+} from '@fortawesome/free-solid-svg-icons';
 
 import { LoaderWrapper } from './components/Shared/Loader/LoaderStyles';
 import { GlobalStyles } from './components/Shared/GlobalStyles';
@@ -21,7 +23,7 @@ import { Footer } from './components/Shared/Footer';
 
 import '../node_modules/react-image-gallery/styles/scss/image-gallery.scss';
 
-library.add(faSearch, faHome);
+library.add(faSearch, faHome, faAngleUp, faAngleDown, faCheck);
 
 export const theme = {
   textColor: '#505050',
