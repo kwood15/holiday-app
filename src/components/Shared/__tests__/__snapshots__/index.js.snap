@@ -72,11 +72,10 @@ exports[`Styled components renders the <BaseLink /> styles based on the {theme} 
 
 exports[`Styled components renders the <BreadcrumbLink /> styles based on the {theme} prop values 1`] = `
 .c0 {
-  color: #505050;
+  font-size: 0.85rem;
 }
 
 .c0.active {
-  color: #0ea7b5;
   -webkit-text-decoration: underline;
   text-decoration: underline;
 }
@@ -191,12 +190,10 @@ exports[`Styled components renders the <Input /> styles based on the {theme} pro
 
 exports[`Styled components renders the <NavigationLink /> styles based on the {theme} prop values 1`] = `
 .c0 {
-  color: #505050;
+  color: #0ea7b5;
 }
 
-.c0:hover,
-.c0:focus {
-  color: #0ea7b5;
+.c0.active {
   border-bottom: 2px solid #ffbe4f;
 }
 

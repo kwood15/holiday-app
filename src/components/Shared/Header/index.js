@@ -24,8 +24,8 @@ export const Header = ({ children }) => {
     <HeaderWrapper className="header">
       <Flex flexDirection="column" alignItems="center">
         <Box className="logo">
-          <Link to="/" className="logo__link">
-            <span className="logo__text u-visually-hidden">logo</span>
+          <Link to="/" className="logo__link" title="Home">
+            <span className="logo__text u-visually-hidden">company logo</span>
             <Logo src={logo} alt="Company logo" />
           </Link>
         </Box>
@@ -40,6 +40,7 @@ export const Header = ({ children }) => {
                 activeClassName="active"
                 className="navigation__link"
                 title={navlink.text}
+                exact
               >
                 {navlink.text}
               </NavigationLink>

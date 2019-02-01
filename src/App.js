@@ -12,9 +12,9 @@ import { UtilitiesStyles } from './components/Shared/UtilitiesStyles';
 import { Button, Input } from './components/Shared/SharedStyles';
 
 import SearchContext from './components/Shared/Search';
-import { Loader } from './components/Shared/Loader';
 import Container from './components/Shared/Container';
 import { Header } from './components/Shared/Header';
+import { Loader } from './components/Shared/Loader';
 import { Breadcrumbs } from './components/Shared/Breadcrumbs';
 import { Main } from './components/Shared/Main';
 import { Footer } from './components/Shared/Footer';

@@ -55,18 +55,30 @@ export const BaseLink = styled(Link)`
 `;
 
 export const NavigationLink = styled(NavLink)`
-  color: ${props => props.theme.textColor};
-  &:hover,
-  &:focus {
-    color: ${props => props.theme.primaryColor};
+  color: ${props => props.theme.primaryColor};
+  &.active {
     border-bottom: 2px solid ${props => props.theme.secondaryColor};
   }
 `;
 
+export const BreadcrumbIcon = styled.li`
+  display: flex;
+  align-items: center;
+  padding-right: 0.25rem;
+`;
+
+export const BreadcrumbItem = styled.li`
+  & + &:before {
+    content: '>';
+    padding: 0 0.25rem;
+    color: #ffbe4f;
+  }
+`;
+
 export const BreadcrumbLink = styled(NavLink)`
-  color: ${props => props.theme.textColor};
+  color: ${props => props.theme.midGray};
+  font-size: 0.85rem;
   &.active {
-    color: ${props => props.theme.primaryColor};
     text-decoration: underline;
   }
 `;

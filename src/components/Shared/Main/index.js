@@ -8,7 +8,7 @@ export const Main = () => (
   <main className="main-content">
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route exact path="/holidays" component={WithSearchContext} />
+      <Route path="/holidays" component={WithSearchContext} />
       <Route path="/holiday/:seoPath/:productId" component={ProductDetailView} />
     </Switch>
   </main>
